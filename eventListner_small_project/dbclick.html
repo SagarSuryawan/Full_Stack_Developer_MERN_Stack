@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double Click</title>
+    <style>
+        body{
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #click{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        #click:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- alert on double click -->
+    <p id="click">Double Click</p>
+</body>
+</html>
+<script>
+
+    let dbclick = document.getElementById("click")
+
+    dbclick.addEventListener("dblclick", ()=> {
+
+        alert("double click event working properly");
+
+    })
+
+</script>

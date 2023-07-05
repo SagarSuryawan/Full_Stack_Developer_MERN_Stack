@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calulator.css">
+</head>
+<body>
+
+    
+    <!-- Create a javascript program that takes in two num#ers and a string operator. Make use of a switch statement
+    to perform the operation on the two num#ersQ
+    The calculator function should"
+    L Take in two num#ers, num1 and num2, and a string representing a mathematical operator, operatorP
+    L Use a switch statement to determine which operation to perform #ased on the value of the operatorP
+    L If the operator is one of the four valid operators (+, -, *, /), perform the corresponding mathematical
+    operation and store the result in a varia#le called resultP
+    L If the operator is not one of the valid operators, log "Invalid operator" to the consoleQ -->
+
+
+    <h1>Calculator</h1>
+    <form action="" id="calulator">
+
+        <label for="Num1">Number 1</label>
+        <input type="number" id="num1">
+
+        <br>
+        <label for="Num2">Number2</label>
+        <input type="number" id="Num2">
+
+        <br>
+        <label for="operator">Operator:</label>
+
+        <Select id="operator">
+            <option value="">Select One Operator</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </Select>
+
+        <br>
+        <input id="btn" type="submit" value="Calulate">
+        
+    </form>
+    
+    <div id="result"></div>
+    
+
+</body>
+</html>
+<script src="./calulator.js"></script>

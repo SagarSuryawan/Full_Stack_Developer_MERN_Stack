@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: teal;
+}
+#calulator{
+    border: 1px solid blue;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 900;
+    background-color: teal;
+}
+#calulator>input,#calulator>label{
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+#calulator>select{
+    margin: 5px; 
+    background-color: black;
+    color: white;
+}
+#btn{
+    width: 20%;
+    background-color: red;
+    color: black;
+}
+#btn:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+    width: 25%;
+    font-size: 15px;
+}
+
+#result{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    padding: 20px;
+}

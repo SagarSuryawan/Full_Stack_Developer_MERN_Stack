@@ -1,0 +1,47 @@
+#portion{
+    /* border: 1px solid blue; */
+    width: 40%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #10ddaaa2;
+}
+h1{
+    text-align: center;
+}
+input{
+   
+    border-radius: 10px;
+    height: 20px;
+    background-color: teal;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    
+}
+input:hover{
+    height: 25px;
+    /* background-color: red; */
+    transition-duration: 0.5s;
+}
+#check{
+    height: 25px;
+    border-radius: 10px;
+    background-color: red;
+    color: black;
+    width:150px;
+    margin:auto;
+    font-size: 15px;
+    border: none;
+    font-weight: 700;
+}
+#check:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    height: 30px;
+}
