@@ -6,18 +6,19 @@ nav{
     margin: auto;
     justify-content: space-between;
 }
-#logo{
-    /* border: 1px solid black; */
-}
+
+ /* #logo{
+    border: 1px solid black;
+} */
+
 menu{
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
     align-items: center;
-    
-   
 }
+
 menu>a{
     border: 1px solid black;
     margin-right: 20px;
@@ -26,12 +27,14 @@ menu>a{
     color: black;
     font-weight: 700;
 }
+
 menu>button{
     background-color: blue;
     color: white;
     padding: 5px;
     border-radius: 5px;
 }
+
 main{
     border: 2px solid black;
     width: 80%;
