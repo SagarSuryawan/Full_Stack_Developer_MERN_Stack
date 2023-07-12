@@ -1,0 +1,39 @@
+nav{
+    /* border: 1px solid red; */
+    display: flex;
+    padding:0px 20px 0px 20px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+#logo{
+    /* border: 1px solid black; */
+}
+menu{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+menu>a{
+    border: 1px solid black;
+    margin-right: 20px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+menu>button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+main{
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+}
