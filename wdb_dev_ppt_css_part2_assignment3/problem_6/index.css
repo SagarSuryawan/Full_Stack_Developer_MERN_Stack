@@ -40,3 +40,11 @@ main{
     width: 80%;
     margin: auto;
 }
+#left>img{
+    width: 300px;
+}
+#left img+p{
+    border: 1px solid blue;
+    width: 400px;
+    line-height: 20px;
+}
