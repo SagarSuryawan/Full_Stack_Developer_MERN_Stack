@@ -1,10 +1,13 @@
 nav{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     padding:0px 20px 0px 20px;
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
+    background-color: #443b3b;
 }
 
  /* #logo{
@@ -17,6 +20,7 @@ menu{
     justify-content: space-evenly;
     justify-content: center;
     align-items: center;
+    /* margin: auto; */
 }
 
 menu>a{
@@ -24,27 +28,56 @@ menu>a{
     margin-right: 20px;
     border: none;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 254, 254);
     font-weight: 700;
 }
 
-menu>button{
+#nav_btn{
     background-color: blue;
     color: white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius:5px;
+    height: 40px;
 }
 
 main{
-    border: 2px solid black;
-    width: 80%;
+    /* border: 2px solid black; */
+    /* width: 80%; */
     margin: auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0px 20px;
 }
+#left{
+    margin-left: 50px;
+}
+#right{
+    margin-right: 50px;
+}
+
 #left>img{
     width: 300px;
+    margin-top: 20px;
 }
-#left img+p{
-    border: 1px solid blue;
-    width: 400px;
-    line-height: 20px;
+#left>p:first-of-type{
+    color: blue;
+    font-size: 20px;
 }
+#left>span{
+    color: blue;
+    font-size: 40px;
+    font-weight: 700;
+}
+#left>p:last-of-type{
+    width: 455px;
+    margin-top: 30px;
+}
+#right>video{
+    width: 450px;
+   
+}
+
+
+  
+
