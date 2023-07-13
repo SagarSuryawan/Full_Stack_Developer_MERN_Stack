@@ -80,6 +80,9 @@ main{
 
 
 /* for small screen */
+@media (min-width:320px) and (max-width:480px){
+    
+}
 
 
   
