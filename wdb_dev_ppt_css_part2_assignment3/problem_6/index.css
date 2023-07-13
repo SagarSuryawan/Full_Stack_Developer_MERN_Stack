@@ -81,6 +81,16 @@ main{
 
 /* for small screen */
 @media (min-width:320px) and (max-width:480px){
+    nav{
+        width: 100%;
+    }
+    nav>menu{
+        display: none;
+        
+    }
+    nav>button{
+        display: none;
+    }
     
 }
 
