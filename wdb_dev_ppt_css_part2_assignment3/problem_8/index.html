@@ -1,0 +1,82 @@
+
+    <!-- 💡 **Q.6** Imagine you are a web developer working for a creative agency that specializes in building visually appealing and interactive websites. The agency has recently received a client request to create a landing page similar to the design of the one-page website: https://www.getonecard.app/. The client wants to showcase a video prominently on the page to engage visitors.
+    
+    Your task is to create a simple webpage that replicates the one-page landing page design, including a responsive layout and an HTML video. The below images are for your reference. Some browsers don’t allow you to play videos without the controls attribute. So, you can add controls here, we will learn how to play a video without the controls attribute in the later sections. -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>problem 8</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav>
+
+            <div id="logo">
+                <img src="https://www.getonecard.app/images/logo_black.svg" alt="logo">
+            </div>
+
+            <menu>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <!-- <a href="">Carrers</a> -->
+                <!-- <a href="">Offers</a> -->
+                <a href="">Blog</a>
+                <!-- <a href="">FAQ</a> -->
+                <a href="">Contact</a>
+            </menu>
+
+            <button id="nav_btn">Login</button> 
+        </nav>
+
+        <!-- main section -->
+
+        <main>
+
+            <!-- left -->
+            <div id="left">
+
+                <h1>Say Hi to</h1>
+                <br>
+
+                <span>OneCard</span>
+                <br>
+                <p>Co-branded Card Issuers:</p>
+                <!-- images -->
+                <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="company">
+                
+                <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+
+            </div>
+
+            <!-- right -->
+            <div id="right">
+
+                <video controls preload="auto" autoplay>
+                    <source src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </main>
+        <!-- footer -->
+        <footer>
+
+            <div>
+                    <h1>No Hidden Fees Ever</h1>
+                    <h4>No Joining Fess.</h4>
+                    <h4>No Annual Fess.</h4>
+                    <h4>No Rewards Redemption Fess.</h4>
+            </div>
+            
+        </footer>
+
+    </body>
+    </html>
+    
+    
