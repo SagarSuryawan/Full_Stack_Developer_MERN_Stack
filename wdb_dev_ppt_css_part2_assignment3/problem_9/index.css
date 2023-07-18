@@ -1,0 +1,46 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+footer{
+    width: 100%;
+    border: 2px solid black;
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    margin-top: 5%;
+}
+#container>div:nth-child(1)>p{
+    width: 350px;
+    line-height: 25px;
+}
+#container>div:nth-child(2)>ul{
+    list-style: none;
+    line-height: 25px;
+}
+#container>div:nth-child(3)>ul{
+    list-style: none;
+    line-height: 25px;
+}
+#container>div:last-child>input{
+ /* border: 1px solid white; */
+
+ border: none;
+ width: 240px;
+ height: 40px;
+ border-radius:10%;
+
+}
+#container>div:last-child>button{
+    /* border: 1px solid white; */
+    background-color: rgb(59, 59, 223);
+    color: white;
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 10%;
+    margin-top: 5%;
+   
+   }

@@ -98,26 +98,33 @@ footer>div>h1{
 
 /* for small screen */
 @media  (max-width:480px){
+    body{
+        width: 100%;
+    }
 
     nav{
-        width: 100%;
+        width: 85%;
         background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjDVsFh9SsVoB9qFjdr99m6QvMyKnsNh4WKQ&usqp=CAU);
         background-position: 98%;
         background-size: 35px;
         background-repeat: no-repeat;
+        border: 2px solid red;
         /* display: flex;
         justify-content: center;
         align-items: center;
-        justify-content: space-between; */
+        justify-content: space-between;
+         */
         
     }
     main{
-        width: 100%;
+        width: 85%;
         display: grid;
+        border: 2px solid red;
 
     }
     #left,#right{
-        width: fit-content;
+        width: 100%;
+        border: 2px solid red;
     }
     video{
         width: auto;
@@ -141,10 +148,13 @@ footer>div>h1{
     footer{
         height: 350px;
         background-color: #fff;
-        width: auto%;
+        width: to;
+        border: 2px solid red;
+        width: 480px;
     }
     footer>div{
         color: black;
+        border: 2px solid red;
     }
     
 
