@@ -80,14 +80,18 @@ main{
 
 
 /* for small screen */
-@media (min-width:320px) and (max-width:480px){
+@media  (max-width:480px){
     
     nav{
         width: 100%;
         background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjDVsFh9SsVoB9qFjdr99m6QvMyKnsNh4WKQ&usqp=CAU);
-        background-size:auto;
-        background-size: 15px;
+        background-position: 98%;
+        background-size: 35px;
         background-repeat: no-repeat;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between; */
         
     }
     nav>menu{
@@ -96,6 +100,9 @@ main{
     }
     nav>button{
         display: none;
+    }
+    main{
+        display: block;
     }
     
 
