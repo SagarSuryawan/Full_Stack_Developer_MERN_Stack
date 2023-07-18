@@ -9,6 +9,9 @@ nav{
     justify-content: space-between;
     background-color: #443b3b;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
  /* #logo{
     border: 1px solid black;
@@ -103,6 +106,10 @@ main{
     }
     main{
         display: block;
+    }
+    #left>p:last-of-type{
+        width: 430px;
+        margin-top: 30px;
     }
     
 
