@@ -2,20 +2,24 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
 footer{
     width: 100%;
     border: 2px solid black;
 }
+
 #container{
     display: flex;
     justify-content: space-evenly;
     background-color: black;
     margin-top: 5%;
 }
+
 #container>div:nth-child(1)>p{
     width: 350px;
     line-height: 25px;
 }
+
 #container>div:nth-child(2)>ul{
     list-style: none;
     line-height: 25px;
@@ -30,7 +34,7 @@ footer{
  border: none;
  width: 240px;
  height: 40px;
- border-radius:10%;
+ border-radius:10px;
 
 }
 #container>div:last-child>button{
@@ -40,7 +44,22 @@ footer{
     border: none;
     width: 240px;
     height: 40px;
-    border-radius: 10%;
+    border-radius: 10px;
     margin-top: 5%;
-   
+   }
+   @media(max-width:480px){
+    #container{
+        display: block;
+        margin-top: 0%;
+        
+    }
+    #container>div:last-child>button{
+        width: 100%;
+        border-radius: 0%;
+    }
+    #container>div:last-child>input{
+        width: 100%;
+        border-radius: 0%;
+    }
+    
    }
