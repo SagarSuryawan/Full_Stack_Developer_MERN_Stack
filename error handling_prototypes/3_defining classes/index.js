@@ -26,4 +26,6 @@ class products{
 
 const personOne =  new products("Sagar",29,"Bhandara")
 console.log(personOne)
-personOne.display()
+personOne.display();
+
+
