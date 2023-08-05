@@ -31,4 +31,8 @@ function Person(name) {
   const p = new Person('sagar');
   console.log(p)
   p.sayHello();
+
+
+
+//  learn from other resourses
   
