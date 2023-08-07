@@ -11,7 +11,7 @@ let obj = {
     phone:9096519472,
     last_name: "Suryawanshi"
 }
-Object.setPrototypeOf(obj1,obj)
+console.log(Object.setPrototypeOf(obj1,obj))
 
 
 
