@@ -16,4 +16,4 @@ function convertToNumber(str) {
   }
 
 
-  console.log(convertToNumber("123"))
+  console.log(convertToNumber("abc"))
