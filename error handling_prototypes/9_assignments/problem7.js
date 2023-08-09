@@ -48,5 +48,5 @@ class User{
     
 }
 
-const user = new User("johndoe", "Password123");
+const user = new User("johndoe", "ssdgegegegag");
 console.log(user.getPassword());
