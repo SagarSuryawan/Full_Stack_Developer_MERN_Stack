@@ -4,7 +4,7 @@
 
 
 function countWords(str) {
-    const words = str.split(" ");
+    const words = str.split(" ")
     const map = new Map();
   
     for (let word of words) {
