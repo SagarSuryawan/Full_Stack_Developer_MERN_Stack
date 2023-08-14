@@ -87,6 +87,12 @@ Data Types
 
 
 
+    2)  variables
+    3)Operators = +, -, * ,/ , **, %   and also operand,unary,binary operator
+    4) comparision operator =      > , < , == , ===
+
+
+
 
 
 
