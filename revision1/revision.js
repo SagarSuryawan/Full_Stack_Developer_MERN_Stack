@@ -92,4 +92,114 @@
 
 
 
+    // ---------------------------------------------------------------------------------------------------------
+
+
+    // REVISION  CLASS 2
+
+
+    // conditions
+let i =false
+    if(i){
+        console.log("this is true")
+    }else{
+        console.log("this is false")
+    }
+
+
+    // if multiple condition are there then.
+
+    // use  if ---- else if ----else
+    
+    
+
+
+    // ternary operator
+
+
+    let name = true;
+
+
+    name ? console.log("ternary true") : console.log("ternary False")
+
+
+
+    // Switch and case
+
+// switch and case used when we have multiple conditions
+
+
+let day  = 7;
+switch(day){
+    case 1:
+        console.log("monday")
+        break;
+    case 2:
+            console.log("tuesday")
+            break;
+    case 3:
+            console.log("Wednesday")
+            break;
+    case 4:
+            console.log("Thusday")
+            break;
+    case 5:
+            console.log("Friday")
+            break;
+    case 6:
+            console.log("Satuday")
+            break;
+    default:
+        console.log("Sunday")
+        }
+
+
+
+
+        // Loops
+
+
+        // 1)  for loops
+
+        for(let i=0 ;i< 5;i++){
+            console.log(i)
+
+        }
+
+
+
+        // loops in Object
+
+
+        let obj = {
+            name:"Sagar suryawanshi",
+            agr:29,
+            address:"Bhandara",
+            pin:441904
+        }
+
+// for in loop
+
+        for(let i in obj){
+            console.log(i,"=",obj[i])
+        }
+
+        // i is key in obj, and obj[i] is value of keys.
+
+
+        // for of loop
+        let arr = [1,3,4,5,7,8,5,4]
+        for(const i of arr){
+            console.log(i)
+        }
+
+
+        // while loop
+
+        let a = 10;
+        while(a<=15){
+            console.log(a)
+            a++
+        }
+
 

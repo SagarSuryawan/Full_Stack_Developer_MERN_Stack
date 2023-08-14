@@ -94,6 +94,40 @@ Data Types
 
 
 
+    *******************************************************************************************************
+
+    REVISION CLASS 2
+
+
+    condition and loops 
+
+    1)Conditions :-
+
+    if else 
+
+    if(){
+        true statement
+    }else{
+        if false this statment
+    }
+
+
+    Switch and Case
+
+    we can use Switch and case when we have multiple conditions 
+
+
+    loop
+
+    for loop 
+    for in loop
+    for of loop
+    while loop
+
+
+
+
+
 
 
 
