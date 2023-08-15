@@ -119,10 +119,22 @@ Data Types
 
     loop
 
+     loops ofr array is forEach
+      loops for object is for of
+
     for loop 
     for in loop
     for of loop
     while loop
+
+
+
+    **********************************************************************************************************
+
+    REVISION CLASS 3
+
+    Array and Objects
+    
 
 
 

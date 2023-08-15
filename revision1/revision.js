@@ -107,6 +107,16 @@ let i =false
     }
 
 
+
+
+    if(true){
+        console.log("yes")
+    }else if(false){
+        console.log("no")
+    }else{
+        console.log("may be")
+    }
+
     // if multiple condition are there then.
 
     // use  if ---- else if ----else
@@ -158,6 +168,8 @@ switch(day){
 
         // Loops
 
+        // loops ofr array is forEach
+        // loops for object is for of
 
         // 1)  for loops
 
@@ -202,4 +214,10 @@ switch(day){
             a++
         }
 
+
+// -----------------------------------------------------------------------------------------------------------
+
+// REVISION cLASS 3
+
+// array and Objects
 
