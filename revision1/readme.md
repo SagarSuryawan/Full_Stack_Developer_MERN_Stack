@@ -129,11 +129,25 @@ Data Types
 
 
 
-    **********************************************************************************************************
+**************************************************************************************************************
 
     REVISION CLASS 3
 
     Array and Objects
+    
+
+    Array is demnoted by [ ]
+    let arr1 = [1,2,3,4,5,6,7,8,9]
+    Element are valuee of array,array also have indexs to acces the values,it's start from 0.
+
+
+    Array methods
+
+    push:- push is used to add one or more element to the end of the array.It modifies the original array length.
+    
+    suntax:-  arr.push("sagar",1)
+
+
     
 
 

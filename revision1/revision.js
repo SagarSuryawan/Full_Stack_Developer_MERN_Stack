@@ -221,3 +221,15 @@ switch(day){
 
 // array and Objects
 
+
+let names = new Array("sagar","Suryawanshi")
+console.log(names)
+
+
+// methods of Array
+
+// push method
+// push method add one or more element to the end of the array.
+
+names.push("anand","nanda")
+console.log(names)
