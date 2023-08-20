@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // method one to get data from api
+    let url = `https://fakestoreapi.com/products/category/electronics`
+
+fetch(url)
+.then(function(res){
+    return res.json()
+})
+.then(function(res){
+    console.log("res",res)
+})
+.catch(function(ree){
+    console.log("err",err)
+})
+
+
+// method two to get data from api
+
+async function getDataFromApi(){
+
+    try{
+
+        let result = await fetch(`https://fakestoreapi.com/products/category/jewelery`)
+    
+    let data = await result.json()
+    console.log("data",data)
+}
+catch(err){
+    console.log("err",err)
+}
+    }
+    
+
+getDataFromApi();
+
+
+async function getData(){
+    try{
+        let result = await fetch(`url`)
+
+        let data = await result.json()
+        console.log(data)
+    }
+    catch(err){
+        console.log("err",err)
+    }
+}
+
+</script>
+
+
+
