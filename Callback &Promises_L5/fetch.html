@@ -46,6 +46,11 @@ catch(err){
 getDataFromApi();
 
 
+
+// Async await
+
+// to makes promise code even cleaner and readable,we can use async and await keywords.The Async keyword use before function defination to indicate asynchornous operation.The await keyword is used inside an async function to pause execution untile a promise is resolved.
+
 async function getData(){
     try{
         let result = await fetch(`url`)
