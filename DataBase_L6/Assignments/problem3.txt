@@ -1,0 +1,10 @@
+What is DBMS? What was the need for DBMS?
+
+DBMS :- i)DBMS is stands for data base management system.
+        ii) DataBase us collection of data is stored data in organized.
+        iii) Database is used to store data which can retrive data and also do some computional work.
+
+        need for DBMS
+        i)To reduce Redundancy of data.
+        ii)DBMS supports centralize data managment.
+        iii) We can add logical data independence. 
