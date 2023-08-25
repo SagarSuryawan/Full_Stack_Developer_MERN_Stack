@@ -1,0 +1,20 @@
+What is the significance of Data modelling and explain the types of data modelling.
+
+
+Conceptual Data Modeling:Focus: High-level view of data without delving into technical details.
+Purpose: Represents business concepts, relationships, and major entities.
+
+Abstraction: Independent of the physical data storage and technical considerations.
+
+Outcome: Conceptual schema or Entity-Relationship Diagrams (ERDs).
+Logical Data Modeling:
+
+Focus: Represents data independently of the database management system.nships, and constraints.
+Abstraction: Abstracts from physical storage details but considers implementation aspects.
+Outcome: Logical schema, often depicted through ERDs or Unified Modeling Language (UML) class diagrams.
+Physical Data Modeling:
+
+Focus: Specifies how data will be physically stored in the database.
+Purpose: Translates the logical model into a design that aligns with the chosen DBMS.
+Abstraction: Accounts for database-specific features, indexing, storage optimization, and performance considerations.
+Outcome: Detailed schema including tables, columns, data types, indexes, and relationships.
