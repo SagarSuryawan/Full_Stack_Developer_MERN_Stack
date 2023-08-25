@@ -1,0 +1,7 @@
+Explain 3 schema architecture along with its advantages.
+
+External Schema:This schema represents how individual users or user groups get the data.The portion of the database that is useful to a specific user's needs.
+
+Conceptual Schema:The conceptual schema represents the overall logical structure of the entire database. It defines the relationships between entities, their attributes, and the constraints.
+
+Internal Schema:The internal schema represents how the data is physically stored and organized within the DBMS.This schema is hidden from users and application developers, ensuring that changes to the physical storage do not affect external
