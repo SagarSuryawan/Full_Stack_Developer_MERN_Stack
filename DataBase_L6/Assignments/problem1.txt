@@ -1,0 +1,4 @@
+What is a Database? Explain with an example on why should we need a database.
+
+Database:- Database is a collection of data that is oraganize and stored in a way that we can retrive data.
+If company has millions of custumores  company needs Database to store that custumores information in structure and manageable way to retrivre any information like theirs orders.
