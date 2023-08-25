@@ -1,0 +1,10 @@
+List out the different types of classification in DBMS and explain them in depth.
+
+
+i) Relational Databases (RDBMS): In this model, data is organized in tables with rows and columns, and relationships between tables are established using keys. The relational model is widely used due to its simplicity and ability to handle structured data efficiently.
+
+ii) Hierarchical Databases: Data is organized in a tree-like structure, where each parent node can have multiple child nodes. This model is suitable for representing hierarchical relationships, but it's less flexible for general data storage.
+
+iii) Network Databases: Similar to hierarchical databases, but with more flexible relationships. Data is organized using sets and pointers, allowing more complex connections between data elements.
+
+iv) Object-Oriented Databases (OODBMS): These databases store data in the form of objects, with attributes and methods. They are suitable for representing complex, real-world objects and their relationships.
