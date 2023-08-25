@@ -1,0 +1,13 @@
+Write a short note on File base storage system.Explain the major challenges of a File-based storage system.
+
+It is widly used in past.It was replaced by noew technology.
+It is basic method to store a data in computer system.
+Data is stored in files,which are organizedin directories [folders].
+Each files contains various types of information like text,images,videos and other form of data.
+
+
+Challenges of File base storage system
+i) Data is often duplicated across multiple files.If The same data needs to be updated or changed.
+Changes needs to be done in rach file.Which means Redundancy.
+ii)File Base storage system has limited data sharing.
+ii)
