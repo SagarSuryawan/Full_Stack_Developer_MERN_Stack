@@ -20,3 +20,6 @@ Conceptual Layer :- It represent the logical structure to the entire database.
 
 
 External Layer :- It is used to represent data to specific users or specific application.
+
+
+            DATA Model
