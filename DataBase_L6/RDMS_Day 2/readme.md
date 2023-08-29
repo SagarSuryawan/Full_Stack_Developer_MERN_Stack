@@ -63,3 +63,13 @@ Insertion anamoly => attempting to insert new data in the table.but being unable
 
 ==============================================================================================================
 
+VIDEO 5 => 1NF  [first normal form]
+
+i) 1NF satisfiy two condition which are first is there should no cell in the which have multiple values.Secound is there should be one primary key.
+
+ii)If there is no primary key then with the help of primary composite key we get primary key.
+
+ii) if two conditrion matches the tables then it is called 1NF[1 normal form]
+
+
+==============================================================================================================
