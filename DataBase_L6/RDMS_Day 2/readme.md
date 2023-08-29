@@ -73,3 +73,8 @@ ii) if two conditrion matches the tables then it is called 1NF[1 normal form]
 
 
 ==============================================================================================================
+
+VIDEO 6 => 2NF [secound normal form]
+
+i) 2NF needs to satisfy two condition first is table is in 1NF form and secound is tables should not have partially functional dependency.
+ii)If this not happens you need to make another which have paritally functional tables.
