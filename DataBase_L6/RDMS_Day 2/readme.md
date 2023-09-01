@@ -78,3 +78,33 @@ VIDEO 6 => 2NF [secound normal form]
 
 i) 2NF needs to satisfy two condition first is table is in 1NF form and secound is tables should not have partially functional dependency.
 ii)If this not happens you need to make another which have paritally functional tables.
+
+
+==============================================================================================================
+
+VIDEO 7 => 3NF[thrid normal form]
+
+i)
+
+==============================================================================================================
+
+VIDEO 8 => BCNF
+
+i)
+
+==============================================================================================================
+
+VIDEO 9 => JOINS
+
+Combining data from multiple tables to represent data is called join.It is achive from SQL queries.
+
+There are four types of join.
+
+i)inner join ==> In inner join helps to get data from the tables which are multiple tables where data present in multiple tables [common data present in multiple tables]
+
+
+ii)Full join[Full outer join] ==> In full join combines result all the data from mutiple tables.
+
+iii)Left join ==> In left join resulted all data from left data[tables 1] and common data from multiple [tables 2] data.
+
+iv)Right Join ==> In right join resulted all data from right table and common data from multiple data.
