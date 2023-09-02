@@ -100,11 +100,19 @@ Combining data from multiple tables to represent data is called join.It is achiv
 
 There are four types of join.
 
-i)inner join ==> In inner join helps to get data from the tables which are multiple tables where data present in multiple tables [common data present in multiple tables]
+i)inner join ==> In inner join helps to get data from the tables which are multiple tables where data present in both tables [common data present in multiple tables]
 
 
-ii)Full join[Full outer join] ==> In full join combines result all the data from mutiple tables.
+ii)Full join[Full outer join] ==> In full join combines result all the data from both tables.
 
-iii)Left join ==> In left join resulted all data from left data[tables 1] and common data from multiple [tables 2] data.
+iii)Left join ==> In left join return all data from left data[tables 1] and common data from both tables [tables 2] data.
 
-iv)Right Join ==> In right join resulted all data from right table and common data from multiple data.
+iv)Right Join ==> In right join return all data from right table and common data from both data.
+
+
+==============================================================================================================
+
+VIDEO 10 => Transcation
+
+
+
