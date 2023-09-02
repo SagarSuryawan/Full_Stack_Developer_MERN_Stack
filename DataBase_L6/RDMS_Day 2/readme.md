@@ -114,5 +114,17 @@ iv)Right Join ==> In right join return all data from right table and common data
 
 VIDEO 10 => Transcation
 
+for database transctional.it has to be support following propertise.
+
+ACID ==>  Atomaticity consistent isolation durability.
+
+i)Atomacity[either all or nothing] => All the steps within a transcation either be successfully completed or must fail,It ensure that transction either fully executed or fully rooled back.
+
+ii)Consistent => State of the system where data remain accurate when multiple user accessing and modifying it.
+
+iii)Isolation => It ensure that multiple transction can run independely without affecting with each other.
+
+iv)Durability => Once transction is commited,it considered final and canoot be undone.it ensure that it will not losse.
+
 
 
