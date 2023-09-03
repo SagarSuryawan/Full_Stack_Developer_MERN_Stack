@@ -1,0 +1,5 @@
+Q1. What is RDBMS? Why do industries use RDBMS?
+
+Ans => RDBMS stands for Relationship database management system that organize and store data in structure format using tables not only sotring it also RDBMS provides maintaing realtionship database .
+
+In industries use RDBMS beacause of industries manage data efficently and also maintaining realtionship beacause of that inductries can obtain data oriented result which can help them to grow. 
