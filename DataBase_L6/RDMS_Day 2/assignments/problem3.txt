@@ -1,0 +1,21 @@
+What is the importance of Relationships in a Database management system? Explain the types
+of relationships.
+
+ans => 
+realtionship data model it is realtionship with each other .There foure types of relationship data model
+
+i) one to one Relationship
+ii)one to many realtionship
+iii)many to one realtionship
+iv)many to many realtionship
+
+
+i)One to one relationship =>  One to one relationship means one entity in a table is related to just one entity in another table. It should be rare in any relational database design.
+
+
+ii) One to Many Relationship=> One to many relationship means one entity in a table is related to one or many entities in another table. A one to many (1 : M) relationship should be the norm in any relational database design and is found in all relational database environments.
+
+
+iii) many to one realtionship => many to one realtionship is mirror of one to many relationship,
+
+iv) many to many relationship => Many to many relationship means multiple entities in a table can be associated with more than one entity in another table.
