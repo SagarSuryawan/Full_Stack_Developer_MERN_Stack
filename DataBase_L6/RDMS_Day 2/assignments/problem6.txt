@@ -1,6 +1,5 @@
 
 Explain the different types of errors that could arise in a denormalized database.
 
-
 data redundancy is intentionally introduced to improve query performance and simplify data retrieval, several types of errors and issues can arise due to the trade-off between redundancy and data integrity.
 
