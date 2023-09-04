@@ -1,0 +1,13 @@
+Explain the different types of joins?
+
+There are four types of join.
+i) right join       ii) left join       iii)full join   iv)inner join
+
+
+i) right join => In right join it return all data from right tables and common data from both tables.
+
+ii)left join => In left join, it return all data from left tables and common data from both tables.
+
+iii)full join => return all data from multiple data.
+
+iv)inner join => inner join return data,which are common data in multiple tables.
