@@ -1,0 +1,1 @@
+Write a short note on Single Responsibility Principle.
