@@ -1,0 +1,21 @@
+
+Q8. List out the different levels of Normalization and explain them in detail.
+
+There are four levels of Normalization
+i)1NF    ii)2NF  iii)3NF     iv)BCNF
+
+i)1NF  => i) It is called first normal form.
+         ii) A tables be in 1NF it has to fullfilled two condition,first there should be primary key and secound is there should be no cell in the tables having multiple values.
+          
+ii)2NF => i)It is called secound normal form.
+         ii)It has two condition that's needs to be fullfilled.
+        iii)First condition is tables in 1NF,means primary key has to be there and cell should not have      multiple value.
+        iv)Secound condition is partial fraction dependency means column in tables depends only part of the primary key rather than entire primary key.
+
+iii)3NF => i)It ic called third normal form.
+          ii)It have to fullfilled two conditions.
+         iii)frist is tables should be 2NF[means tables has to fulled 2NF conditions]
+         iv) Secound is there should be no transitiv dependency means  chain of attribute dependencies where the value of one attribute depends on another attribute.
+
+iv)BCNF => i)It is called Boyce-Codd Normal Form
+          ii)If every functional dependency X → Y, X is the super key of the table or in simple words,If Y depends on X -hen X should be a par- of -he primary key
