@@ -3,4 +3,10 @@ What are joins and why do we need them?
 Join are bascially cobine data from two or more table to retrive meaningful information.
 
 Need:- Data seprationa,data is oraganize into multiple tables to reduce data reduncdency and mainr=tain data integrity.With the help of join we can retrive meaningful data from two or more tables as requried.In we can access multiple datavfrom different tables.
- 
+
+there are four types of join.
+
+i)left join
+ii)right join
+iii)inner join
+iv)full join
