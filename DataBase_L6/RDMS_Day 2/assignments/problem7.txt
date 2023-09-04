@@ -1,6 +1,7 @@
 What is normalization and what is the need for normalization?
 
-Normalization is used to organize and structure relational database tables in a way that reduces data redundancy and dependency ,also improving data integrity and query performance.Normalization is to minimize data anomalies like insertion, update, and deletion anomalies,by ensuring that each  data is stored in only one logical place in the database.
+Normalization is used to organize and structure relational database tables in a way that reduces data redundancy and dependency,also improving data integrity and query performance.
 
+Normalization is to minimize data anomalies like insertion, update, and deletion anomalies,by ensuring that each data is stored in only one logical place in the database.
 
 The need of normalization is for reduce data redundancy beacause of that normaliztion minimize data duplication.Normalization improve data intigrity.
