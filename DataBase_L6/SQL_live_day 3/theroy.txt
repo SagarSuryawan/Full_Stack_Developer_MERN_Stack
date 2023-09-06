@@ -1,0 +1,25 @@
+1)MY_SQL
+i) download MY_SQL ,to download any sofware take help from medium artical or youtube videos.keywords mysql installation windows 10 medium/youtube.
+ii)In command prompt  to enter in mysql command, 
+iii) mysql -u root -p ,press enter,enter password.
+iv)here we can write sql commands.SQL [structure query language]
+v)sql is declarative language means SQL does not need user algorithm to perfrom on data,SQL have own algorithm  for output.
+vi)In RDBMS data in a from of table,to perfrom action like ADD, DELETE, READ, UPDATE  data SQL is used to perfrom this action.
+
+vii) to list all datases   => show datases;      {semi colan is manditaory}
+
+viii) to create database  => create database DATABASE NAME;
+
+xi) to select datbase  => use datbase name;   after that all operation is for only given database 
+
+x) to delete database => drop database database name;
+
+11) create tables in database  => create tables  Movies (Movie_Name varchar (1000), rating integer)
+
+    Movies is a names of tables and  movies_Name is column or property in tables varchar is datatype.
+    after property there has to be datatype of column or datatype.
+
+12)add data into tables  => insert into movies (name,rating) values (PK,3.5)
+
+above (name,rating) values (PK,3.5)  this is order of inserting values in tables. if rating was before name interger value 3.5 is before PK
+
