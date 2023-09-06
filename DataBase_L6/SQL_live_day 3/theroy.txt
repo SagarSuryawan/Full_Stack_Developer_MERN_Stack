@@ -23,3 +23,8 @@ x) to delete database => drop database database name;
 
 above (name,rating) values (PK,3.5)  this is order of inserting values in tables. if rating was before name interger value 3.5 is before PK
 
+13) to retrive data tables or print data from tables => select * from movies
+meaning => select -> Means get the data and print integer, * -> all row and column or you can write one or more column name.
+from movies -> means from movies tables.
+
+
