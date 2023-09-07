@@ -82,7 +82,12 @@ data start printing from 6th row and print 5 rows starting from 6 position.
 
 
 
-17)
+17)change/UPDATE data from table.
+
+update movielist set moviename = "endgame" where moviename = "spiderman1";
+
+change moviename spiderman1 from endgame.Update spiderman name to endgame.  
+
 
 
 
