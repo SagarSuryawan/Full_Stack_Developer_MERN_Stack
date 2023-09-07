@@ -1,0 +1,18 @@
+1) mysql console  ==>    mysql -u root -p
+
+2)list of databases ==>  show databases;
+
+3)create database ==> create database Movies;      Note:Movies is name of database.
+
+4)delete database ==> drop database Movies;
+
+5)to select database ==> use Movies;
+
+6)create tables in database ==> create table MoviesList(name varchar(100),rating integer);
+Note: in the above syntax tables name is MoviesList (column_name varchar is datatype (100) limit,rating is column name integer is datatype).
+
+7)add data into tables ==> insert into MoviesList(name,rating) value ("spider man", 4.5)
+
+8) print and retrive data from tables.
+i)select * from MoviesList
+ii)slelct column name form MoviesList
