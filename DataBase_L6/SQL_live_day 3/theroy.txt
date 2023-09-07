@@ -14,7 +14,7 @@ xi) to select datbase  => use datbase name;   after that all operation is for on
 
 x) to delete database => drop database database name;
 
-11) create tables in database  => create tables  Movies (Movie_Name varchar (1000), rating integer)
+11) create tables in database  => create table  Movies (Movie_Name varchar (1000), rating integer)
 
     Movies is a names of tables and  movies_Name is column or property in tables varchar is datatype.
     after property there has to be datatype of column or datatype.
@@ -26,5 +26,40 @@ above (name,rating) values (PK,3.5)  this is order of inserting values in tables
 13) to retrive data tables or print data from tables => select * from movies
 meaning => select -> Means get the data and print integer, * -> all row and column or you can write one or more column name.
 from movies -> means from movies tables.
+
+
+14) to add multiple data one syntax  ==> insert into movies (movie_Name,rating) values (),(),(),();
+add multiple parenthesis after value and in parenthesis add data .
+
+15) to clear command scrren ==> \! cls
+
+16) to print data from tables which satisfy given condition ==> select * from movies where rating > 5[condition].we can use  "or" & "and" operatoe like in javascript;
+ note: only above 5 rating movies will print from database.
+
+ 17) we can equal to operator like " = " not neccessary ==.
+
+
+18) PREFIX MATCHING  search based on statring with specific chars.
+
+ ==> select * from movielist where moviename like "sp%"  
+
+starting with sp and after no matter what char should be.
+
+
+
+19) SUFFIX MATCHING serch based on ending with specific char.or numbers.
+
+==> select * from MoviesList where moviename like "%an";
+
+moviename ending with an adter no matter what is befor that.
+
+20) find data with ecact character or number in table.
+ ==> select * from movielist where moviename like "%e%";
+
+ in the query output will all movies name haveing name "e";
+
+ 21)
+
+
 
 

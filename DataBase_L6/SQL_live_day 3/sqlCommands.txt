@@ -15,4 +15,75 @@ Note: in the above syntax tables name is MoviesList (column_name varchar is data
 
 8) print and retrive data from tables.
 i)select * from MoviesList;
-ii)slelct column name form MoviesList;
+ii)select column name form MoviesList;
+
+9)add mutiple data in single line ==> insert into MoviesList (name,rating) value (),(),(),();
+
+10) To clear comaand scrren \! cls
+
+11) print selected data from table which satisfy given condition ==> select * from movies where rating > 5.we can use "and"  & "or" like javascript.we can also use "equal to operator " by "=".no need of == or === .
+
+only selected data will print which satisfy given condition.
+
+
+
+12) prefix matching is a concept that frist some character match in given data.
+    For example = you search person name from your phone contacts.
+    QUERY ==> select * from movielist moviename like "spi%"
+Note : % means any shuod be there .
+
+
+
+13) suffix matching is a concept that last character match in given data.
+For Example = search a name that last character ends with er.
+QUERY ==> select * fron movielist moviename like "%er"
+NOTE: % MEANS ANY SHOULD BE THERE .
+
+
+
+14)find data with ecact character or number in table.
+
+ ==> select * from movielist where moviename like "%e%";
+
+ in the query output will all movies name haveing name "e";
+
+
+ 15)  SORTING DATA 
+
+ i) we can sort data in asending and descending order.
+ ii) we can sort by number and word .
+
+ ==> select * from movielist order by rating asc; 
+ above query data sort in asending order based rating column.
+
+ ==> select * from movielist order by rating desc;
+ above query sort data in desending order based on rating column.
+
+ ==> select * from movielist order by moviename;
+ above query sort like dictnary from .
+
+ ==> select * from movielist where moviename like "%p%" order by rating asc;
+above query sort data haveing moviename p in asending order.
+
+==>select * from movielist order by moviename ,rating asc
+above query sort data by moviename and rating in asending order.
+
+
+
+16) suppose we have 100 row of data ,so need to print only 10 row 
+==> select * from movielist limit 3;
+above query print only three row of data .
+
+oofset is used for startfrom ,means data is start printing from given offset value.
+
+==> select * from movielist limit 5 offset 5;
+
+data start printing from 6th row and print 5 rows starting from 6 position.
+
+
+
+17)
+
+
+
+
