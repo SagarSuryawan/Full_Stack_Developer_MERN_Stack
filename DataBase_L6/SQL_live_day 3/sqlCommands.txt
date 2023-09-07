@@ -11,8 +11,8 @@
 6)create tables in database ==> create table MoviesList(name varchar(100),rating integer);
 Note: in the above syntax tables name is MoviesList (column_name varchar is datatype (100) limit,rating is column name integer is datatype).
 
-7)add data into tables ==> insert into MoviesList(name,rating) value ("spider man", 4.5)
+7)add data into tables ==> insert into MoviesList(name,rating) value ("spider man", 4.5);
 
 8) print and retrive data from tables.
-i)select * from MoviesList
-ii)slelct column name form MoviesList
+i)select * from MoviesList;
+ii)slelct column name form MoviesList;
