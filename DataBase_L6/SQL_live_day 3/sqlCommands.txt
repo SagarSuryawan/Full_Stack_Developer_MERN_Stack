@@ -89,7 +89,9 @@ update movielist set moviename = "endgame" where moviename = "spiderman1";
 change moviename spiderman1 from endgame.Update spiderman name to endgame. 
 
 18) find data in range  => for example  salary from 15000 to 100000;
+
  ==> select * from empolye where salary betweem 15000 and 100000;
+ 
  where empolye is tables name and salary is column.
 
 
