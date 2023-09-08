@@ -53,12 +53,27 @@ starting with sp and after no matter what char should be.
 
 moviename ending with an adter no matter what is befor that.
 
+
 20) find data with ecact character or number in table.
  ==> select * from movielist where moviename like "%e%";
 
  in the query output will all movies name haveing name "e";
 
- 21)
+ 
+ 21) find data in range  => for example  salary from 15000 to 100000;
+ ==> select * from empolye where salary betweem 15000 and 100000;
+ where empolye is tables name and salary is column.
+
+
+
+22) find  multiple data respective any single column;
+==> select * from empolye where id in (1,3,5,7,9)
+above query is find multiple based on given id.
+id is column name.
+
+
+
+
 
 
 
