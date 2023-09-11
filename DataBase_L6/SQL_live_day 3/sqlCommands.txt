@@ -209,7 +209,7 @@ OUTPUT ==>
 | name      | role                 | city       | state           |
 +-----------+----------------------+------------+-----------------+
 | neha      | CTO                  | Bhandara   | maharashtra     |
-| mohan     | UI UX designer       | Lucknow    | Uttar pradesh   |
+| mohan     | UI UX designer       | Lucknow    | Uttar pradesh   | 
 | sagar     | devops engineer      | Musuru     | Karnataka       |
 | vishva    | frontend engineer    | Ladakh     | Jammu & Kashmir |
 | yasmin    | Jr.backend engineer  | Sivni      | Madhya pradesh  |
@@ -219,6 +219,61 @@ OUTPUT ==>
 | subina    | graphics designer    | Kerl       | Kerla           |
 | abhisheik | Jr,frontend engineer | Nagpur     | Odisha          |
 +-----------+----------------------+------------+-----------------+
+
+
+LEFT OUTER JOIN 
+
+In left outer join all data return from left table[table 1] and common data from both tables.
+ALL DATA FROM ADDRESS TABLE [LEFT TABLE] AND COMMON DATA FROM BOTH TABLES
+
+query ==> SELECT name,role,state,area FROM address left outer JOIN empolye ON empolye.address_id = address.address_id;
+
+
+OUTPUT ==>
+
++-----------+----------------------+-----------------+-----------+
+| name      | role                 | state           | area      |
++-----------+----------------------+-----------------+-----------+
+| sagar     | devops engineer      | Karnataka       | kormangla |
+| neha      | CTO                  | maharashtra     | khat road |
+| kartik    | full stack developer | Andhra pradesh  | Kodur     |
+| abhisheik | Jr,frontend engineer | Odisha          | Bramapur  |
+| mohan     | UI UX designer       | Uttar pradesh   | Sitapur   |
+| shubham   | backend engineer     | Punjab          | Bhatinda  |
+| aryan     | associate developer  | Gujrat          | Morbi     |
+| yasmin    | Jr.backend engineer  | Madhya pradesh  | Indore    |
+| subina    | graphics designer    | Kerla           | Pullad    |
+| vishva    | frontend engineer    | Jammu & Kashmir | shrinagar |
+| NULL      | NULL                 | nandora         | AAA       |
+| NULL      | NULL                 | khamTalav       | BBB       |
++-----------+----------------------+-----------------+-----------+
+
+
+
+
+
+RIGHT OUTER JOIN 
+
+
+OUTPUT ==>
+ 
+ +-----------+----------------------+-----------------+-----------+
+| name      | role                 | state           | area      |
++-----------+----------------------+-----------------+-----------+
+| sagar     | devops engineer      | Karnataka       | kormangla |
+| vishva    | frontend engineer    | Jammu & Kashmir | shrinagar |
+| shubham   | backend engineer     | Punjab          | Bhatinda  |
+| mohan     | UI UX designer       | Uttar pradesh   | Sitapur   |
+| kartik    | full stack developer | Andhra pradesh  | Kodur     |
+| aryan     | associate developer  | Gujrat          | Morbi     |
+| abhisheik | Jr,frontend engineer | Odisha          | Bramapur  |
+| yasmin    | Jr.backend engineer  | Madhya pradesh  | Indore    |
+| neha      | CTO                  | maharashtra     | khat road |
+| subina    | graphics designer    | Kerla           | Pullad    |
+| rahul     | sales maneger        | NULL            | NULL      |
+| chetan    | contactor            | NULL            | NULL      |
+| kiran     | marketing            | NULL            | NULL      |
++-----------+----------------------+-----------------+-----------+
 
 
 
