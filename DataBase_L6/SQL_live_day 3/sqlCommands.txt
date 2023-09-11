@@ -107,17 +107,118 @@ id is column name.
  above query use to delete row having name sagar.
 
 
+21) JOINS 2 tables. inner join fetch common data on the basis of primary key of one tables is foregin key of another table. 
+
+Empolye Table
+
++-----------+------+----------------------+------------+------------+
+| name      | age  | role                 | address_id | contact_no |
++-----------+------+----------------------+------------+------------+
+| sagar     |   25 | devops engineer      |          8 |         91 |
+| vishva    |   27 | frontend engineer    |         10 |         99 |
+| shubham   |   30 | backend engineer     |          7 |         95 |
+| mohan     |   27 | UI UX designer       |          4 |         92 |
+| kartik    |   28 | full stack developer |          1 |         93 |
+| aryan     |   23 | associate developer  |          2 |         94 |
+| abhisheik |   22 | Jr,frontend engineer |          5 |         98 |
+| yasmin    |   24 | Jr.backend engineer  |          3 |         96 |
+| neha      |   21 | CTO                  |          6 |         97 |
+| subina    |   26 | graphics designer    |          9 |        100 |
++-----------+------+----------------------+------------+------------+
+
+==============================================================================================================
+
+Address Table
+
++------------+-----------------+---------+-----------+
+| address_id | state           | city_id | area      |
++------------+-----------------+---------+-----------+
+|          8 | Karnataka       |       6 | kormangla |
+|          6 | maharashtra     |       2 | khat road |
+|          1 | Andhra pradesh  |       4 | Kodur     |
+|          5 | Odisha          |       7 | Bramapur  |
+|          4 | Uttar pradesh   |       3 | Sitapur   |
+|          7 | Punjab          |       1 | Bhatinda  |
+|          2 | Gujrat          |       5 | Morbi     |
+|          3 | Madhya pradesh  |      10 | Indore    |
+|          9 | Kerla           |       8 | Pullad    |
+|         10 | Jammu & Kashmir |       9 | shrinagar |
++------------+-----------------+---------+-----------+
+
+
 INNER JOIN
- 21) inner join => inner join is table_1 primary key is same column of  table _2 is foregin key ,
 
- i) two tables joinning data=>
- select first_name,last_name,district from table_1 join table_2 on table_1.address.id = table_2.address.id; 
 
-ii) three tables joinning data=>
-select first_name.last_name,district,city FROM table_1 JOIN table_2 ON table_1.address.id = table_2.address.id JOIN table_3 ON table_1.city = table_3.city;
+i) PROBLEM STATEMENT :- There is a two tables actors and address,Actor table have details of actors and address_id and address table have a detail of address of that acotrs with primary key address_id.select .print the actors first name ,last name and address from address table.
 
-* JOIN KEYWORD DIRECTLY INDICATES INNER JOIN*
 
+ EXPLAINATION :- join concept. inner join ,address table primary key is used in empolye table to track address of actors .
+
+ with the help of address_id column in empolye table[which is foregin key in empolye table] we can access data of address table.
+
+
+ QUERY ==> SELECT name,role,state FROM empolye JOIN address ON empolye.address_id = address.address_id;
+ 
+ OUTPUT ==>  name,role and state
+ +-----------+----------------------+-----------------+
+| name      | role                 | state           |
++-----------+----------------------+-----------------+
+| sagar     | devops engineer      | Karnataka       |
+| neha      | CTO                  | maharashtra     |
+| kartik    | full stack developer | Andhra pradesh  |
+| abhisheik | Jr,frontend engineer | Odisha          |
+| mohan     | UI UX designer       | Uttar pradesh   |
+| shubham   | backend engineer     | Punjab          |
+| aryan     | associate developer  | Gujrat          |
+| yasmin    | Jr.backend engineer  | Madhya pradesh  |
+| subina    | graphics designer    | Kerla           |
+| vishva    | frontend engineer    | Jammu & Kashmir |
++-----------+----------------------+-----------------+
+
+
+==============================================================================================================
+
+City Table
+
++---------+------------+
+| city_id | city       |
++---------+------------+
+|       2 | Bhandara   |
+|       3 | Lucknow    |
+|       6 | Musuru     |
+|       9 | Ladakh     |
+|      10 | Sivni      |
+|       5 | gujju      |
+|       1 | Pind       |
+|       4 | Andravasti |
+|       8 | Kerl       |
+|       7 | Nagpur     |
++---------+------------+
+
+ii) PROBLEM STATEMENT :-join 3 tables and print  name,role,city,state.
+
+table name is empolye,table,address.
+
+in address table there is city_id  column is present which is forign key and city_id  in city tables is primary  key.
+
+
+QUERY ==> SELECT name,role,city,state FROM empolye JOIN address on empolye.address_id = address.address_id JOIN city ON address.city_id = city.city_id;
+
+OUTPUT ==> 
++-----------+----------------------+------------+-----------------+
+| name      | role                 | city       | state           |
++-----------+----------------------+------------+-----------------+
+| neha      | CTO                  | Bhandara   | maharashtra     |
+| mohan     | UI UX designer       | Lucknow    | Uttar pradesh   |
+| sagar     | devops engineer      | Musuru     | Karnataka       |
+| vishva    | frontend engineer    | Ladakh     | Jammu & Kashmir |
+| yasmin    | Jr.backend engineer  | Sivni      | Madhya pradesh  |
+| aryan     | associate developer  | gujju      | Gujrat          |
+| shubham   | backend engineer     | Pind       | Punjab          |
+| kartik    | full stack developer | Andravasti | Andhra pradesh  |
+| subina    | graphics designer    | Kerl       | Kerla           |
+| abhisheik | Jr,frontend engineer | Nagpur     | Odisha          |
++-----------+----------------------+------------+-----------------+
 
 
 

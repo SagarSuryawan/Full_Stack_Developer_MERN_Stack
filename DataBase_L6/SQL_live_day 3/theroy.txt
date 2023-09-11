@@ -54,22 +54,65 @@ starting with sp and after no matter what char should be.
 moviename ending with an adter no matter what is befor that.
 
 
-20) find data with ecact character or number in table.
+20) find data with exact character or number in table.
  ==> select * from movielist where moviename like "%e%";
 
  in the query output will all movies name haveing name "e";
 
  
  21) find data in range  => for example  salary from 15000 to 100000;
+
  ==> select * from empolye where salary betweem 15000 and 100000;
+
  where empolye is tables name and salary is column.
 
 
 
 22) find  multiple data respective any single column;
-==> select * from empolye where id in (1,3,5,7,9)
+
+==> select * from empolye where id[column] in (1,3,5,7,9)
+
 above query is find multiple based on given id.
 id is column name.
+
+
+
+
+23) delete data from table;
+
+==> delete from empolye[table name] where first_name = "sagar";
+
+this query delete row from tables where first_name = "sagar";
+
+
+
+
+24)update any data from table.
+
+==> update empolye[table name] set roll_no = 149 where roll_no = 129;
+
+abovew query change the value of row having roll_no = 129 to 149;
+
+
+25) JOINS 
+
+i) INNER JOIN => In inner join merge commom data from different table.with the help of primary key  from one table is foregin key from another table.
+
+INNER JOIN BETWEEN TWO TABLES.
+
+QUERY=> SELECT name,role,state from empolye join address on empolye.address_id = address.address_id;
+
+
+name,role is from table one and state from another table, empolye join address tables and on basis of address _id form empolye and address table.
+
+
+INNER JOIN BETWEEN THREE TABLES.
+
+QUERY => SELECT name,role,city,state FROM empolye JOIN address on empolye.address_id = address.address_id JOIN city ON city.city_id = address.address_id;
+
+
+first join two tables where we get name role and state and join city table,primary key from city tables is equal to foregin key from address table.
+
 
 
 
