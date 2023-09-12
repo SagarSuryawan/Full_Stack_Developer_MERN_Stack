@@ -128,6 +128,27 @@ QUERY ==> select name,role,state,area from address right outer join empolye on e
 
 
 
+26) find the length of column    
+
+query ==> select city,length(city) from city
+
+OUTPUT ==> it will retunr a column new column having length.
+
+
+27) distinct mreans unique (not repeating)
+
+query => select distinct city from city;
+
+above query print all city from city table but not duplicate  city or repeating city.
+
+
+
+28) if else and nested if else;
+
+
+
+
+
 
 
 

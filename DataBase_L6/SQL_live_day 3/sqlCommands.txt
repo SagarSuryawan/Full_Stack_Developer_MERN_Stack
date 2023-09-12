@@ -276,6 +276,70 @@ OUTPUT ==>
 +-----------+----------------------+-----------------+-----------+
 
 
+22) find the length of column    
+
+query ==> select city,length(city) from city
+
+OUTPUT ==> it will retunr a column new column having length.
+
++--------------------+--------------+
+| city               | length(city) |
++--------------------+--------------+
+| A Corua (La Corua) |           18 |
+| Abha               |            4 |
+| Abu Dhabi          |            9 |
+| Acua               |            4 |
+| Adana              |            5 |
+| Addis Abeba        |           11 |
+| Aden               |            4 |
+| Adoni              |            5 |
+| Ahmadnagar         |           10 |
+| Akishima           |            8 |
++--------------------+--------------+
+
+
+23) distinct mreans unique (not repeating)
+
+query => select distinct city from city;
+
+above query print all city from city table but not duplicate  city or repeating city.
+
+
+
+24)IF ELSE IN MYSQL.
+  
+  i) SELECT column1,column2 IF(condition, "true value","false value")  FROM table_name;
+
+
+  ii)  SELECT column1,column2
+        CASE
+        WHEN  condition  THEN "yes"
+        ELSE "no"
+        END FROM table_name;
+
+    
+    
+    
+   iii) NESTED IF ELSE
+
+    SELECT column1,column2
+    
+    CASE
+    WHEN condition THEN
+    
+    CASE[nested]
+    WHEN condition THEN "OUTPUT"
+    ELSE "OUTPUT"
+    END
+    ELSE "OUTPUT"
+    END
+    FROM table_name;
+
+
+
+25)  
+
+
 
 
 
