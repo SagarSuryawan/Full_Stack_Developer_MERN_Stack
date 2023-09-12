@@ -337,9 +337,52 @@ above query print all city from city table but not duplicate  city or repeating 
 
 
 
-25)  
+25)  group by 
+
+
+QUERY ==> select count(*),district from address group by district limit 10;
+
+it will give you no. of element for district ,group by return one row.
+
+OUTPUT==>
++----------+----------------+
+| count(*) | district       |
++----------+----------------+
+|        2 | Alberta        |
+|        2 | QLD            |
+|        1 | Nagasaki       |
+|        9 | California     |
+|        1 | Attika         |
+|        1 | Mandalay       |
+|        2 | Nantou         |
+|        5 | Texas          |
+|        1 | Central Serbia |
+|        1 | Hamilton       |
++----------+----------------+
+
+
+26) condition only on group;
+
+Query => select count(*) as count,district from address group by district limit 10 having count > = 5;
 
 
 
-
-
++-------+------------------+
+| count | district         |
++-------+------------------+
+|     9 | California       |
+|     5 | Texas            |
+|     7 | England          |
+|     9 | West Bengali     |
+|     8 | Uttar Pradesh    |
+|     5 | Karnataka        |
+|     8 | So Paulo         |
+|    10 | Buenos Aires     |
+|     5 | Gois             |
+|     5 | Punjab           |
+|     5 | Hubei            |
+|     9 | Shandong         |
+|     7 | Maharashtra      |
+|     5 | Tamil Nadu       |
+|     6 | Southern Tagalog |
++-------+------------------+

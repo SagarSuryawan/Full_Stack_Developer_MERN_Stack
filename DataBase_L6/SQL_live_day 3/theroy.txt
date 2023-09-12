@@ -146,9 +146,16 @@ above query print all city from city table but not duplicate  city or repeating 
 28) if else and nested if else;
 
 
+29)
+
+i)QUERY ==> select count(*),district from address group by district limit 10;
+
+it will give you no. of element for district ,group by return one row.
 
 
+ii)condition only on group;
 
+Query => select count(*) as count,district from address group by district limit 10 having count > = 5;
 
 
 
