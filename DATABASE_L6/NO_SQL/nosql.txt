@@ -78,6 +78,11 @@ CAP theorem state that in distributed system,we can achive only features of CAP 
 There one features remaing either consistency or Availability.
 
 
+-------------------------------------------------------------------------------------------------------------
+
+Key Value Database
+
+
 
 
 
