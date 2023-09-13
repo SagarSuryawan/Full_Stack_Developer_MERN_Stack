@@ -16,7 +16,7 @@ i)NO_SQL database is dynamic Schema ,means it will changes schema according to t
 ii)NO_SQL database is used to manege and manipulate large volume of data.
 
 
-----------------------------------------
+--------------------------------------------------------------------------------------------------
 
 3) Challenges of RDBMS
 
@@ -33,7 +33,7 @@ iv) this is a expensive solution for interprices.
 
 v) all this challenges  NO_SQL came in pictures.
 
-
+-------------------------------------------------------------------------------------------------
 
 4)Distributed System   OR  Cluster
 
@@ -46,4 +46,38 @@ iii)In Distributed system ,multiple machine is used to store amd compute big dat
 iv)features of distributed system  is multiple machine is connect over the network.complexity should exract from end users.
 
 v)Replication is data store in multiple machine to avoid loss of data,if one machine or node is failed.
- 
+
+
+--------------------------------------------------------------------------------------------------
+
+
+5)CAP Theorem :
+
+C : Consistency.
+A : Availability.
+P : Partition Tolerence.
+
+
+Consistency:- Note: Stale data means old data.
+
+i)if multiple users access single data at same time.Then there is Consistency in system.
+
+ii) Eventually consistent when all node get with updated data.
+
+
+Availability:-System should always respound even if it is with error message or inconsisitence message.
+
+
+Partition Tolerence:- i) System ability to continue functioning correctly even One node is failed to  communicate with others nodes in network.
+
+ii)If netwirk partition happens then replication is used to avoid data.
+
+
+CAP theorem state that in distributed system,we can achive only features of CAP theorem.Partition Tolerence should not avoid bracause loss of data.
+
+There one features remaing either consistency or Availability.
+
+
+
+
+
