@@ -1,0 +1,49 @@
+ 1) NO_SQL
+
+i)It is not replacement of MY_SQL or RDBMS.
+
+ii) it designed to handel and store data in way that differ from traditional realtional database.
+
+iii) NO_SQL databases are used to maneage and manipulate large volume of unstructor data.
+
+---------------------------------------------------------------------------------------------------
+
+
+2) INTRODUCTION OF NO_SQL
+
+i)NO_SQL database is dynamic Schema ,means it will changes schema according to the need.
+
+ii)NO_SQL database is used to manege and manipulate large volume of data.
+
+
+----------------------------------------
+
+3) Challenges of RDBMS
+
+Explaination :- 
+
+i) Flexibility :- can not use unstructred data.RDBMS is require a fixed schema[meaning structure of the data must be defined in advance].
+
+ii)Scalability :- This can lead to limitations in handling high volumes of data or traffic, making it challenging to scale them effectively.
+
+iii)Limitation Scalability :- RDBMS uses joins to queries,if data scattered across multiple machine,for that data fetch with join and network request.Network request takes times that's why it takes time to fetch data. 
+
+iv) this is a expensive solution for interprices.
+
+
+v) all this challenges  NO_SQL came in pictures.
+
+
+
+4)Distributed System   OR  Cluster
+
+i)If data volume and velocity [speed to fetch and retrive data] is magnificent,then there is problem occurs to store amd computr data.
+
+ii)Distributed System is used to store big ammount of data.
+
+iii)In Distributed system ,multiple machine is used to store amd compute big data.
+
+iv)features of distributed system  is multiple machine is connect over the network.complexity should exract from end users.
+
+v)Replication is data store in multiple machine to avoid loss of data,if one machine or node is failed.
+ 
