@@ -82,6 +82,24 @@ There one features remaing either consistency or Availability.
 
 Key Value Database
 
+i) ket value database is a type of NO_SQL database system that store and retrive data as a collection of key-value pair.
+
+ii)Each data record associate with with unique key,and value can be any type of data. 
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Document Database
+
+i)data store in the form of document.
+
+ii)Each document conatain data in the form of json/bson.
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Graph Database
 
 
 
