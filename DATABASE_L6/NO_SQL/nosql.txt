@@ -93,7 +93,7 @@ Document Database
 
 i)data store in the form of document.
 
-ii)Each document conatain data in the form of json/bson.
+ii)Each document conatain data in the form of json/bson..
 
 
 --------------------------------------------------------------------------------------------------------------
