@@ -108,3 +108,5 @@ ii) Graph database,data represented as nodes,and relationship, which connrect th
 
 iii)graph databases useful when complex and interconnected relationship.
 
+
+--------------------------------------------------------------------------------------------------------------
