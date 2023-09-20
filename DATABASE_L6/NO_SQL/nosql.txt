@@ -106,7 +106,7 @@ i) Graph database is a type of NO_SQL database that uses a graph structure to st
 
 ii) Graph database,data represented as nodes,and relationship, which connrect the nodesand repesent how these entities are realted to each other.
 
-iii)graph databases useful when complex and interconnected relationship.
+iii)graph databases useful when complex and interconnected relationship..
 
 
 --------------------------------------------------------------------------------------------------------------
