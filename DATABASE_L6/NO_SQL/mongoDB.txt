@@ -1,0 +1,6 @@
+1) It is a nosql database,mongodb uses JSON like document.
+2)JSON(javascript object notation) not actually javascript object.JSON is language independent .
+3)BSON(Binary javascript object notation)
+4)Normally we can send or receive data in the form of JSON.
+5)Internally MongoDB manage the conversion if JSON-BSON and BSON-JSON automatically.
+ 
