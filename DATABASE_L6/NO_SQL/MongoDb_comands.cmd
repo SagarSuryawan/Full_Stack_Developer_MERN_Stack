@@ -40,3 +40,21 @@
 
 9)add record to the collection 
 db.students.insertOne({key1:value1,key2:value2, . . })
+
+
+10) add multiple records ti the collection 
+==> db.collection_name.insertMany([
+    {
+        key:value,
+        key:value
+    },
+    {
+        key:value,
+        key:value
+    },
+    {
+        key:value,
+        key:value
+    }
+
+])

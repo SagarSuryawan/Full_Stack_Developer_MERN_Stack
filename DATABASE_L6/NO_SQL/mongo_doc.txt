@@ -31,6 +31,13 @@ Document Database :- MongoDB
 
 7) If new database is empty then it will not list new database .Beacause in MongoDb if database is empty it will not show in list of databases;
 
+8) add record to collection
+==> db.collection_name.insertOne({key:value,key:value})
+
+9)add multiple records rti the collections
+==> db.collection_name.insertMany([{key:value,key:value},{key:value},{key:value}])
+Note: multiple Records add inside the array befire add multiple records use array.
+
 
 
 
