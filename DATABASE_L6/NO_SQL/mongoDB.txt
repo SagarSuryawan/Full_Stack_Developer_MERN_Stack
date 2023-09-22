@@ -3,7 +3,9 @@
 3)BSON(Binary javascript object notation)
 4)Normally we can send or receive data in the form of JSON.
 5)Internally MongoDB manage the conversion if JSON-BSON and BSON-JSON automatically.
+
 --------------------------------------------------------------------------------------------------------------
+
 6) import data from mongodb compass.
 i)Create a new Database (we can directly create it using MongoDB
 Compass).
@@ -18,5 +20,15 @@ We will go for Option 1.
 v)It will open the file explorer where you can select the JSON we just
 downloaded.
 vi)Click on import and it will automatically import the data from the JSON
-vii)
+
+--------------------------------------------------------------------------------------------------------------
+
+7)import data without mongodb compass 
+i) change directories to the files present.
+==>  cd downloads;
+ii) now we can use tool called as mongoimport
+==> mongoimport --db sales --collection sales_data --file sale.json
+iii)sales is database name and sales_data is collection name and sale.json is file where data is present.
+
+------------------------------------------------------------------------------------------------------------
  

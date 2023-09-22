@@ -58,3 +58,21 @@ db.students.insertOne({key1:value1,key2:value2, . . })
     }
 
 ])
+
+11) import data without mongodb compass
+mongoimport --db sales --collection sales_data --file sale.json
+sales is database name and sales_data is collection name and sale.json is file where data is present.
+
+
+12)count no. of documents[records] in collection.
+==> db.collection_name.find().count()
+
+13) get certain ammount of documents [record]
+ ==> db.collection_name.find().limit(10);
+ it will show only 10 no. of records.
+
+ 14) offset,skip some no. of record and and print some no of records
+ ==> db.collection_name.find().skip(10).limit(2)
+ it will print 2 records before that it skip 10 records.
+
+ 15)
