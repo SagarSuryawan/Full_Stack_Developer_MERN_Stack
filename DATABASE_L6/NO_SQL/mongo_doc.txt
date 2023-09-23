@@ -54,7 +54,9 @@ sales is database name and sales_data is collection name and sale.json is file w
  ==> db.collection_name.find().skip(10).limit(2)
  it will print 2 records before that it skip 10 records.
 
- 14)
+ 14)filter the record with two or more condotion .
+ ==>db.collection_name.find({$or:[{condition1},{condition2}]})
+ it will print the which fullfilled both conditions.
 
 
 
