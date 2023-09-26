@@ -78,3 +78,19 @@ sales is database name and sales_data is collection name and sale.json is file w
  15)filter the record with two or more condotion .
  ==>db.collection_name.find({$or:[{condition1},{condition2}]})
  it will print the which fullfilled both conditions.
+
+ 16)PROJECTIONS
+ if we want to get some specific key - values pairs this process called projections.
+ first arguments of find function is an object which takes filteration criteria.
+ it can accept another argumentas an object.we can also pass first arguments empty.
+
+ ==>db.collectionName.find({filter1: value1...}, {property1: true,property2: true....});
+
+ if we write some key with false then records will print without that key value pairs.
+
+ ==>db.collectionName.find({},{property1:false,property2:false});
+ Now this will bring everything apart from property1 and property2
+
+ 17
+ 
+
