@@ -92,8 +92,18 @@ sales is database name and sales_data is collection name and sale.json is file w
  Now this will bring everything apart from property1 and property2
 
  17) Delete records from collection 
- i) db.collection_name.deleteOne({Filter1:"Value1",...})
+ ==>db.collection_name.deleteOne({Filter1:"Value1",...})
  to delete multiple records from collection use "deleteMany" function
- ii)db.collection_name.deleteMany({filter1:"Value1",...})
+ ==>db.collection_name.deleteMany({filter1:"Value1",...})
+
+ 18)Update records from collections.
+ i)to update single record from collection
+ ==>db.collection_name.uodateOne({filter1:value1},{$set:{key:value}})
+ ii) to update more than one records ,just replace updateOne to UpdateMany.
+
+ ii) inc  value 
+ ==>db.collection_name({},{$inc:{key:1}})
+ it will increase by 1
+ if key:-1 it will decrease by 1
  
 
