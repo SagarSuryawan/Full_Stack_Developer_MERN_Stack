@@ -105,5 +105,4 @@ sales is database name and sales_data is collection name and sale.json is file w
  ==>db.collection_name({},{$inc:{key:1}})
  it will increase by 1
  if key:-1 it will decrease by 1
- 
 
