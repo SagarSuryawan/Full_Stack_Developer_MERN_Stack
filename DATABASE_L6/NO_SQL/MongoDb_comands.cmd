@@ -91,6 +91,9 @@ sales is database name and sales_data is collection name and sale.json is file w
  ==>db.collectionName.find({},{property1:false,property2:false});
  Now this will bring everything apart from property1 and property2
 
- 17
+ 17) Delete records from collection 
+ i) db.collection_name.deleteOne({Filter1:"Value1",...})
+ to delete multiple records from collection use "deleteMany" function
+ ii)db.collection_name.deleteMany({filter1:"Value1",...})
  
 
