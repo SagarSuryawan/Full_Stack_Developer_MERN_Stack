@@ -106,3 +106,33 @@ sales is database name and sales_data is collection name and sale.json is file w
  it will increase by 1
  if key:-1 it will decrease by 1
 
+ 19)Distnict Values of key.
+ ==>db.collection_name.distinct("key")
+it will give you a distinct value of key.
+==============================================================================================================
+20)OPERATORS
+
+1)$ne: Not equal to
+2)$eq: Equals to
+3)$lt:less than
+4)$lte:less than equals to
+5)$ge:greater than
+6)$gte:greather than equals to
+7)$and: logical and
+8)$or: logical or
+9)$in: means multiple values of keys in different records [one key have different values]
+10)$not:
+11)$nor:
+
+i)Not Equals to [:ne]
+==>db.collection_name.find({key:{$ne:"Value"}})
+==>db.students_info.find({stud_country:{$ne:"India"}})
+it will print the data information which stud_country is not equals to India.
+
+ii)Two Operator "AND" , $gt: , $lt: , access nested object value.
+==>db.collection_name.find({$and:[{"dewPoint.value":{$gt:500}},{"dewPoints.value":{$lt:900}}]})
+in the above query will print dewPoints.value greater than 500 and less than 900. with 'and' Operator beacause of two condition apply.
+
+iii)IN Operator
+==>db.collection_name.({salary:{$in:[30000,50000,80000,90000]}})
+if you want a find a  records based on property and comapare that with bunch of values in array
