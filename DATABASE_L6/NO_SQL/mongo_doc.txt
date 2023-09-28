@@ -120,5 +120,22 @@ iii)IN Operator
 if you want a find a  records based on property and comapare that with bunch of values in array.
 
 
+21)Analysing query
+it will Analysize queries using explain function.it shows explaination of query
+==>db.collection_name.find().explain("executionStats")
 
+22)INDEXING
+indexing is a technique used to improve the performance of database queries by allowing the database to quickly locate and retrive specific documment from collection
+
+i) list all indexing
+==>db.collection_name.getIndexes();
+
+ii) to Remove indexing.
+==>db.collection_name.dropIndex("index_name")
+
+iii)Create index for Numbers
+==>db.collection_name.createIndex(key:1)
+
+iv) create index for string
+==>db.products.createIndex({ product_name: "text" });
 
