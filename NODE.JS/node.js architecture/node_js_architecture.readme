@@ -1,0 +1,11 @@
+node.js open source.
+node.js is javascript runtime enviorment.
+
+1) request process in node.js
+i) request are recevied by node.js which can either simple (non-blocking) or complex (blocking) depends on the task to be perfromed.
+ii) querying for specific data .seaching for data in the database.
+iii) deleting data invovles sending request to delete specicifc data or perfroming a delete query.
+iv) updating a data invovles sending request to change  or update a specific entry in database.
+v) node.js add incoming request to it's event queue.
+vi) the event loop in node.js processes the request one by one and checked weather external resouces are required,if not then  moven on other request
+vii) simple request processed in the event loop and responses are returned to the repective client
