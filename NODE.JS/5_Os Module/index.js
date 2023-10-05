@@ -1,7 +1,14 @@
 
 const os = require("os")
-console.log("CPU architecture:"+ os.arch());
-console.log(os.freemem())
-console.log(os.totalmem())
-console.log(os.networkInterfaces())
-console.log(os.release())
+// retrive details about operating system of a computer.
+console.log("archicutre:",os.arch());
+console.log("Free memory",os.freemem());
+console.log("Toal Memory",os.totalmem());
+console.log("Network interfaces",os.networkInterfaces());
+console.log("temp dir path",os.tmpdir());
+console.log("endianness",os.endianness());
+console.log("hostname:",os.hostname());
+console.log("os type",os.type());
+console.log("Platfrom",os.platform());
+console.log("Last release",os.release());
+
