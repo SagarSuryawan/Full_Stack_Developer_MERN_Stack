@@ -1,10 +1,11 @@
 const { FILE } = require("dns");
 const fs = require("fs");
 
-// // THIS METHOD IS READINF A FILE
+// THIS METHOD IS READINF A FILE
 // console.log("read start")
 
-// // asynchorouns way to read File
+// asynchorouns way to read File
+
 // fs.readFile('index.txt',function(err,data){
 //     if(err){
 //         console.log("error",err)
