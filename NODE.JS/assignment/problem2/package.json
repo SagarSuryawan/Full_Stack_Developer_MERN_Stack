@@ -1,0 +1,15 @@
+{
+  "description": "this is my first assignment on fundamental of node.js",
+  "name": "problem1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "problem",
+    "1"
+  ],
+  "author": "",
+  "license": "ISC"
+}
