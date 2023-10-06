@@ -1,0 +1,9 @@
+npm:- 1)npm is a node package maneger,
+manges packages.
+dependency management
+cli provides
+publishing and sharing 
+
+
+
+i)npm init   => create package.json file. or existing.
