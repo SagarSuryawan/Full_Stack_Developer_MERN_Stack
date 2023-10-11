@@ -31,11 +31,11 @@ const option = {
 
 const apiReq = http.request(option,(apiRes) => {
     apiRes.on("data",(data) =>{
-        console.log(data.tostring())
+        console.log(data.toString())
     }) 
 
     apiReq.on("error",() =>{
         console.log(e)
     })
 })
-apiReq();
+apiReq.end();
