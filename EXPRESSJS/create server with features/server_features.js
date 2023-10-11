@@ -1,4 +1,4 @@
-// features of server
+// features of server   => server to server
 
 //  Sending HTTP request - The http.request() method can be used to send HTTP requests from a Node.js
 
@@ -13,29 +13,18 @@ const http = require("http")
 
 const option = {
     hostname:"fakestoreapi.com",
-    path:"/products/3",
+    path:"/products/2",
     method:"GET"
 }
 
-
-// const apiReq = http.request(option,(apiRes)=>{
-//     apiRes.on("data",(data) =>{
-//         console.log(data.toString())
-//     })
-
-//     apiReq.on("error",()=>{
-//         console.log(e)
-//     })
-// })
-// apiReq.end()
-
-const apiReq = http.request(option,(apiRes) => {
+const apiReq = http.request(option,(apiRes)=>{
     apiRes.on("data",(data) =>{
-        console.log(data.toString())
-    }) 
-
-    apiReq.on("error",() =>{
-        console.log(e)
+        console.log(data.String())
     })
 })
-apiReq.end();
+
+apiReq.on("Error", (error)=> {
+    console.log(error)
+})
+
+apiReq.end()
