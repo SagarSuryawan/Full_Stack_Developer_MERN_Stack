@@ -19,7 +19,7 @@ const option = {
 
 const apiReq = http.request(option,(apiRes)=>{
     apiRes.on("data",(data) =>{
-        console.log(data.String())
+        console.log(data.toString())
     })
 })
 
