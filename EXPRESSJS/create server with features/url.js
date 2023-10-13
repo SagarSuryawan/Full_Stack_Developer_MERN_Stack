@@ -1,8 +1,8 @@
 const { createServer } = require("http");
 
-const http = ("http");
+const http = require("http");
 
-const port = 3030;
+const port = 3050;
 
 const server = createServer((req,res) =>{
     if(req.url == '/'){
@@ -23,12 +23,28 @@ const server = createServer((req,res) =>{
     }else if(req.url == '/product'){
 
         
+const option = {
+    hostname:"fakestoreapi.com",
+    path:"/products/2",
+    method:"GET"
+}
 
+const apiReq = http.request(option,(apiRes)=>{
+    apiRes.on("data",(data) =>{
+        res.statusCode = 200;
+        res.setHeader = ("content-type",'application/json')
+        res.end(data.toString())
+    })
+})
 
-        res.statusCode = 200
-        res.setHeader("Content-Type",'application/json')
-        res.end(JSON.stringify({productName: "Product 1"}));
+apiReq.on("error", ()=> {
+    console.log(e)
+})
 
+apiReq.end()
+        // res.statusCode = 200;
+        // res.setHeader = ("content-Type",'text/plain')
+        // res.end("product page")
     }else{
         res.statusCode = 500;
         res.setHeader("Content-Type",'text/plain')
@@ -39,4 +55,5 @@ const server = createServer((req,res) =>{
 
 server.listen(port,()=>{
     console.log(`running on ${port} port`)
+    
 })
