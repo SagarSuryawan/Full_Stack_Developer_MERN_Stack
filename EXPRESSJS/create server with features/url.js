@@ -2,13 +2,13 @@ const { createServer } = require("http");
 
 const http = require("http");
 
-const port = 3050;
+const port = 1005;
 
-const server = createServer((req,res) =>{
+const server = http.createServer((req,res) =>{
     if(req.url == '/'){
         res.statusCode = 200;
         res.setHeader("Content-Type","text/plain")
-        res.end("Welcome to node.js home page")
+        res.end("Welcome to node.js home page,url")
 
     }else if (req.url == '/about'){
         res.statusCode = 200;
@@ -25,7 +25,7 @@ const server = createServer((req,res) =>{
         
 const option = {
     hostname:"fakestoreapi.com",
-    path:"/products/2",
+    path:"/products/10",
     method:"GET"
 }
 
@@ -42,9 +42,6 @@ apiReq.on("error", ()=> {
 })
 
 apiReq.end()
-        // res.statusCode = 200;
-        // res.setHeader = ("content-Type",'text/plain')
-        // res.end("product page")
     }else{
         res.statusCode = 500;
         res.setHeader("Content-Type",'text/plain')
