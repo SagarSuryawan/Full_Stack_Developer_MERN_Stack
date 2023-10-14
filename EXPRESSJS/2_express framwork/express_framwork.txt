@@ -1,0 +1,18 @@
+Express
+1)what and why Express?
+i)different types of node.js framwork
+=>
+A)Framework is a software tool or platfrom that provides developer with a set of pre-written code ,component and libraries that they can use to build apllication.
+B)framwork include set of guidelines and best practices that help developer to write code more more efficently to build application more stable,secure and scalable.
+
+
+What is Express?
+=> It is an open-source backend web application Framework for resful api and node.js.it is fast ,main feature is robust routing middelevare function.
+i)robust routing => path management.
+ii) middleware function => checking and access credientibility.
+iii)Express is fast and efficent for building web application with high traffic.
+
+=======================================================================================================================
+
+
+
