@@ -1,0 +1,10 @@
+port is associated with a unique number called numder.
+which allow data to be routed to the correct application and service.
+specific port number are reserved to identify specific services.
+
+1) Well known port = ranges from  0 to 1023,these port quiet famous and registered for specific task.
+80(HTTP),443(HTTPS),25(SMTP)simple mail tranfer protocol,53(DNS)domain name system,110(pop3)post office protocol version ,143(IMAP)internet message access protocol.
+
+2)registered-port = ranges from 1024 to 49151,8080(Http),3306(mysql),5432(postgre sql),3389(remote desktop protocol)
+
+3)Dynamic or private port = ranges from 49152 to 65535,when cliengt initiate a connection to a server programe,the operating system assign a unique dyanamic port number to the client side of the connection.
