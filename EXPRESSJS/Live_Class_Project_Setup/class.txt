@@ -1,0 +1,52 @@
+Steps for setting up apllication 
+
+1) install node pacakge maneger  ==> npm init -y  (it gives a information about application)
+2)install express and express ==> npm install express mongoose
+3)in package.json file if you set "type":"module"  it indidcate that your project is using ECMA script module rather than commonjs module.In ECMA script module,you use the 'import' and 'export' syntax for module loading instead of 'require' and 'module.exports'.
+4)to start scripts inside "scripts"  write "start":"node index.js"  it use for launching your Node.js application.
+5) i)create a directory named src.Inside src app.js file is for routing for that import express from 'express'  after routing at the end export default app;
+ii)index.js file import app from path './app.js' beacause we want code from  app.js file.
+index.js also have port number.
+6)mongoose is used for database connectiom ,it is ODM  object document model for nodejs.
+first import mongoose from 'mongoose' 
+then connect db ==> mongoose.connect('link')
+
+ professional appoch to conncet with database;
+ database conncetion may fail, database is in another contitent.
+while connecting to database  if error occurs then need of error handling.
+in app.js file
+
+code and details
+
+(async()=>{
+    try{
+
+        await mongoose.connect('dbstring')
+        console.log("connected sucessfully")
+
+        app.on("error",(err)=>{
+            console.log("Error: ",err)
+            throw err;
+        })
+
+        app.listen(port,()=>{
+            console.log(`listneing on port ${port}`)
+        })
+
+    } catch (error) {
+        console.log("Error":err)
+        throw err;
+    }
+})()
+
+7) database modelling make folder inside src and create file named user.schma.js
+ 
+ make UserSchema ==> const schema = mongoose.schema({
+    name:string,
+    size:string,
+
+ })
+
+ export this schema ,
+ export default mongoose.model("User",UserSchema)
+ 

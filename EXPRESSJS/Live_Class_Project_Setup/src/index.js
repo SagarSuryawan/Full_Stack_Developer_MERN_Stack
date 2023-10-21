@@ -1,6 +1,6 @@
 import app from './app.js'
 const port = 4001;
-
+import mongoose from 'mongoose';
 
 // database connection
 (async () =>{
@@ -16,12 +16,12 @@ const port = 4001;
             console.log("listend")
         })
     }catch(error){
-        console.log("error:",err)
-        throw err;
+        console.log("error:",error)
+        throw error;
     }
 })()
 
 
-app.listen(port,() =>{
-    console.log(`server running on ${port} port`)
-})
+// app.listen(port,() =>{
+//     console.log(`server running on ${port} port`)
+// })
