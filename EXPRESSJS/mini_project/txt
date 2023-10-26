@@ -1,0 +1,10 @@
+mongodb+srv://saga:Sagar_123@atlascluster.awmktvn.mongodb.net/mini_proj
+
+
+in app.js 
+1) import express ==> import express from "express"
+2) create instance of express application ==> const app = express()
+3)routing ==> app.get('/', (req,res) =>{
+    res.send("Hello World!")
+})
+4) export this app for availabel for other files ==> export default app
