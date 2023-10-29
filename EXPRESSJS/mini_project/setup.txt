@@ -1,0 +1,24 @@
+MONGODB ATLAS ==> mongodb+srv://saga:Sagar_123@atlascluster.awmktvn.mongodb.net/mini_proj
+
+
+                            IN APP.JS
+1) import express ==> import express from "express"
+2) create instance of express application ==> const app = express()
+3)routing ==> app.get('/', (req,res) =>{
+    res.send("Hello World!")
+})
+4) export this app for availabel for other files ==> export default app
+
+
+
+                     IN INDEX.JS OR MAIN FILE
+1)import app ==> import app from './app.js'
+2)port , process.env.PORT
+3)listen the app 
+app.listen(PORT, ()=> {
+    console.log(`server running on 4{PORT}`)
+})
+
+
+                    In .env FILE
+1) .env include storing API keys, database connection strings, server ports, and other environment-specific configurations. This practice enhances security by keeping sensitive information out of the source code, especially when the code is shared or open-source.
