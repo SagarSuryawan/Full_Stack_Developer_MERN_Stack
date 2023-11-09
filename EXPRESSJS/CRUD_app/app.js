@@ -22,5 +22,5 @@ const userroutes = require("./routes/userRoutes.js")
 
 
 // routing
-// app.get("/",userroutes)
+app.use("/",userroutes)
 module.exports = app;
