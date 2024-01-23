@@ -3,6 +3,7 @@ const User = require("../model/userSchema.js")
 
 
 exports.createUser = async(req,res) =>{
+    
     try {
         const {name,address,phone} = req.body
 
