@@ -110,3 +110,4 @@ exports.signin = async(req,res) =>{
 }
 
 
+// Note:1) in controllers first exract values from req.body.2) validate values if values are correct or not with operators,dependencies or find user already exists or not. After that try catch error to find .  
