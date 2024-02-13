@@ -80,14 +80,13 @@ exports.signin = async(req,res) =>{
         if(!user || user.password !== password) {
     
             return res.status(400).json({
-    
                 success:false,
                 message:"invalid creditenital"
     
             })
         }
     
-        const token  = Users.jwtToken()
+        const token  = user.jwtToken()
         user.password = undefined;
     
         const cookieOption  = {
@@ -96,7 +95,7 @@ exports.signin = async(req,res) =>{
         }
     
         res.cookie("token",token,cookieOption);
-        res.json(400).json({
+        res.status(200).json({
             success:true,
             data:user
         })
