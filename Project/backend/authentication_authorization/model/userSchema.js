@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     timestamps:true
 })
 
-// jwt token
+// jwt token  genrating json web token
 
 userSchema.methods = {
     jwtToken(){

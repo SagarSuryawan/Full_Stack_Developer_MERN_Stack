@@ -1,6 +1,8 @@
 const Users = require("../model/userSchema.js")
 const emailValidator = require("email-validator")
 
+// every controllers have same steps like first validate and then try catch block 
+
 exports.signup = async (req,res) => {
     
         const { name,email,password,confirmpassword } = req.body
@@ -113,3 +115,5 @@ exports.signin = async(req,res) =>{
 
 
 // Note:1) in controllers first exract values from req.body.2) validate values if values are correct or not with operators,dependencies or find user already exists or not. After that try catch error to find .  
+
+// jwt token includes three parts 1st is which algorithim 2nd is which data you want store and 3rd is signature after that 
