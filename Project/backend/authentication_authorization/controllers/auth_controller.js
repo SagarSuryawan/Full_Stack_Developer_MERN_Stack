@@ -86,7 +86,7 @@ exports.signin = async(req,res) =>{
         
     
         // validation,if user exists or user.password(given password) iscequal to req.body password
-        if(!user || user.password === password) {
+        if(!user || user.password !== password) {
     
             return res.status(400).json({
                 success:false,
