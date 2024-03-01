@@ -63,7 +63,7 @@ const emailValidator = require("email-validator")
 
 //  }
 
-exports.signin = async (req,res) =>{
+exports.signin = async (req,res,next) =>{
 
         const { email,password } = req.body
     
@@ -83,7 +83,7 @@ exports.signin = async (req,res) =>{
                     message:"invalid user or password"
                 })
             }
-
+// Create jwt token using userSchema method( jwtToken() )
             const token  = user.jwtToken()
              user.password = undefined
 
@@ -91,7 +91,7 @@ exports.signin = async (req,res) =>{
                 maxAge:24 * 60 * 60 * 1000,
                 httpOnly:true
             }
-            res.cookie("token",token,cookieOption)
+            res.cookie("token", token, cookieOption)
             
             res.status(200).json({
                 success:true,
@@ -155,17 +155,37 @@ exports.signup = async (req,res) =>{
         })
 
     } catch (error) {
-        if(erroe.code == 11000){
+        if(error.code == 11000){
             return res.status(400).json({
                 success:false,
                 message:"User already exists"
             })
         }
 
-        return res.status(400),json({
+        return res.status(400).json({
             success:false,
             message:error.message
         })
         
     }
+}
+
+
+exports.getUser = async (req,res) =>{
+    const userId = req.user.id
+    try {
+
+        const user = await User.findById(userId)
+        return res.status(200).json({
+            success:true,
+            data:user
+        })
+    } catch (error) {
+
+        return res.status(400).json({
+            success:false,
+            message:error.message
+        })
+    }
+
 }
