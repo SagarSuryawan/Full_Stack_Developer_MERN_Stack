@@ -45,7 +45,8 @@ const userSchema = new mongoose.Schema({
 
 userSchema.methods = {
     jwtToken(){
-        JWT.sign(
+        
+       return JWT.sign(
             {
                 id:this.id,
                 email:this.email

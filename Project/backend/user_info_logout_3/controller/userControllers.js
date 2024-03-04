@@ -63,7 +63,7 @@ const emailValidator = require("email-validator")
 
 //  }
 
-exports.signin = async (req,res,next) =>{
+exports.signin = async (req,res) =>{
 
         const { email,password } = req.body
     
@@ -91,7 +91,7 @@ exports.signin = async (req,res,next) =>{
                 maxAge:24 * 60 * 60 * 1000,
                 httpOnly:true
             }
-            res.cookie("token", token, cookieOption)
+             res.cookie("token", token, cookieOption)
             
             res.status(200).json({
                 success:true,
