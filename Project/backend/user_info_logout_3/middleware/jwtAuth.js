@@ -1,4 +1,5 @@
 //  function called jwtAuth that is designed to verify the authenticity of a JWT (JSON Web Token) provided by a client. It is typically used to protect routes that require a valid authentication token to access.
+// middleware insure that user logged in or not and valid token or not 
 
 const JWT = require("jsonwebtoken")
 
