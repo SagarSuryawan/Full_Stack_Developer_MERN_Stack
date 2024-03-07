@@ -2,8 +2,10 @@ const JWT = require("jsonwebtoken")
 
 
 const jwtauth = (req,res,next) => {
+   
     
-    const token = (req.cookies && req.cookies.token)  || null
+    const token = (req.cookies && req.cookies.token) || null
+    // console.log(token)
 
     if(!token){
         return res.status(400).json({
@@ -14,11 +16,10 @@ const jwtauth = (req,res,next) => {
 
     try {
         
-        const payload = JWT.verify("token",proccess.env.SERECT)
-        req.user = {
-            id:payload.id,
-            email:payload.id
-        }
+        const payload = JWT.verify(token,process.env.SECRET)
+        
+        req.user = {id: payload.id, email: payload.email }
+        console.log("req.user",req.user)
     } catch (e) {
         return res.status(400).json({
             success:false,
@@ -28,4 +29,4 @@ const jwtauth = (req,res,next) => {
     next()
 }
 
-module.exports = jwtauth
+module.exports = jwtauth;

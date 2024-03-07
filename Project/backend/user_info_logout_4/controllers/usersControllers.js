@@ -105,7 +105,7 @@ exports.signin = async(req,res) =>{
     }
 }
 
-exports.getuser = async(req,res) =>{
+exports.getuser = async(req,res,next) =>{
 
     const userId = req.user.id
 
@@ -119,7 +119,8 @@ exports.getuser = async(req,res) =>{
     } catch (e) {
         return res.status(400).json({
             sucess:false,
-            message:e.message
+            message:e.message,
+            
         })
     }
 }

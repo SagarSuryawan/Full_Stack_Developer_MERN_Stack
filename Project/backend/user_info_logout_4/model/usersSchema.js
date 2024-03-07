@@ -1,6 +1,7 @@
 
 const mongoose = require("mongoose")
 const JWT = require("jsonwebtoken")
+// const bcrypt = require("bcrypt")
 
 const userSchema = new mongoose.Schema({
     name:{
@@ -28,7 +29,17 @@ const userSchema = new mongoose.Schema({
     {
         timestamp:true
     }
+
 )
+
+// userSchema.pre("save", async function(){
+
+//     if(!this.isModified("password")) {
+//         return next();
+
+//     }
+// })
+
 
 userSchema.methods = {
     jwtToken(){
@@ -37,7 +48,7 @@ userSchema.methods = {
                 id:this.id,
                 email:this.email
             },
-            process.env.SERECT,
+            process.env.SECRET,
             {expiresIn:"24h"}
         )
     }
