@@ -17,8 +17,10 @@ const jwtauth = (req,res,next) => {
     try {
         
         const payload = JWT.verify(token,process.env.SECRET)
-        
+        // decode the token. If successful, it extracts the payload from the token
+
         req.user = {id: payload.id, email: payload.email }
+        //  extracts the user information from the payload and attaches it to the req object under req.user
         console.log("req.user",req.user)
     } catch (e) {
         return res.status(400).json({
