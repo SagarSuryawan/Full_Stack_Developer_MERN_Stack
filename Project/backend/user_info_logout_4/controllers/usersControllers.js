@@ -137,6 +137,7 @@ exports.logout = (req,res) =>{
             maxAge: 0,
             httpOnly: true,
         }
+        // update but token is still present after hitting api
 
         res.cookie("token","",cookieOption)
 
