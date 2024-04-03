@@ -126,19 +126,26 @@ exports.getuser = async(req,res,next) =>{
 }
 
 exports.logout = (req,res) =>{
-    try {
-        const cookieOption = {
-            expires:new Date(),
-            httpOnly:true
-        }
-        res.cookie("token",null,cookieOption)
+    // in cookie jwt token is present means you are login,to logout you delete token or null 
 
-        return res.status(200).json({
+    try {
+
+        const cookieOption = {
+            // expires:new Date(0),
+            // httpOnly:true
+            secure: true,
+            maxAge: 0,
+            httpOnly: true,
+        }
+
+        res.cookie("token","",cookieOption)
+
+         res.status(200).json({
             success:true,
             message:"successfully logged out" 
         })
     } catch (e) {
-        return res.status(400).json({
+             res.status(400).json({
             success:false,
             message:e.message
         })

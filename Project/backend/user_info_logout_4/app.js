@@ -3,6 +3,7 @@ const cors = require("cors")
 const dbconnection = require("./config/dbconnection")
 require("dotenv").config()
 const cookieParser = require("cookie-parser")
+// network communication is strerlize ,to convert in json
 const app = express()
 
  app.use(express.json())
