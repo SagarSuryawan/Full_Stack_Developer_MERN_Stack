@@ -85,10 +85,12 @@ exports.signin = async(req,res) =>{
 
         const cookieOption = {
             maxAge:24 * 60 * 60 * 1000,
-            httpOnly:true
+            httpOnly:true,
+            secure:true
         }
 
-        res.cookie(token, "token", cookieOption)
+        res.cookie("token", token, cookieOption)
+        // ***
 
         res.status(200).json({
             success:true,
@@ -125,21 +127,22 @@ exports.getuser = async(req,res,next) =>{
     }
 }
 
-exports.logout = (req,res) =>{
+exports.logout = async (req,res) =>{
     // in cookie jwt token is present means you are login,to logout you delete token or null 
 
+console.log(req.headers)
     try {
 
         const cookieOption = {
-            // expires:new Date(0),
-            // httpOnly:true
-            secure: true,
-            maxAge: 0,
-            httpOnly: true,
+                //  expires: new Date(0),
+                maxAge:0,
+                 httpOnly: true,
+                 secure: true,
+                 path: '/'
         }
         // update but token is still present after hitting api
 
-        res.cookie("token","",cookieOption)
+       await res.cookie("token",null,cookieOption)
 
          res.status(200).json({
             success:true,

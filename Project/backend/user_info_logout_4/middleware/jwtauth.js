@@ -1,7 +1,7 @@
 const JWT = require("jsonwebtoken")
 
 
-const jwtauth = (req,res,next) => {
+const jwtauth = async(req,res,next) => {
    
     
     const token = (req.cookies && req.cookies.token) || null
@@ -16,8 +16,9 @@ const jwtauth = (req,res,next) => {
 
     try {
         
-        const payload = JWT.verify(token,process.env.SECRET)
+        const payload = await JWT.verify(token,process.env.SECRET)
         // decode the token. If successful, it extracts the payload from the token
+        // console.log(payload)
 
         req.user = {id: payload.id, email: payload.email }
         //  extracts the user information from the payload and attaches it to the req object under req.user
