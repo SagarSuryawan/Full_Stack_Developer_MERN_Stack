@@ -1,24 +1,23 @@
-const express = require("express")
-const cors = require("cors")
-const dbconnection = require("./config/dbconnection")
 require("dotenv").config()
+
+const cors = require("cors")
+
+const express = require("express")
+const dataBaseConnection = require("./config/dbconnection")
 const cookieParser = require("cookie-parser")
-// network communication is strerlize ,to convert in json
+
 const app = express()
 
- app.use(express.json())
+
+app.use(express.json())
  app.use(express.urlencoded({extended:true}))
  app.use(cors())
  app.use(cookieParser())
 
- dbconnection()
+dataBaseConnection()
 
+const routers = require("./routes/userRoutes.js")
 
-const userRoutes = require("./routes/usersRoutes.js")
+app.use("/",routers)
 
-app.use("/",userRoutes)
-
-
-
-
-module.exports = app
+module.exports = app;
