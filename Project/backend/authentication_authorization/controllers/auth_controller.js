@@ -49,7 +49,7 @@ exports.signup = async (req,res) => {
         if(error.code === 11000){
             return res.status(400).json({
                 success:false,
-                message:'Account is already exists'
+                message:'Account is already exists sagar'
             })
         }
         return res.status(400).json({
@@ -96,17 +96,21 @@ exports.signin = async(req,res) =>{
         }
     
         const token  = user.jwtToken()
+
         user.password = undefined;
     
         const cookieOption  = {
             maxAge:24 * 60 * 60 * 1000,
             httpOnly:true
         }
+
     
         res.cookie("token",token,cookieOption);
-        res.status(200).json({
+
+        return res.status(200).json({
             success:true,
-            data:user
+            data:user,
+            message:"user successfully login"
         })
     }
     catch(error){
