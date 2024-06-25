@@ -65,41 +65,87 @@ exports.signup = async (req,res) => {
     }
 }
 
+// exports.signin = async(req,res) =>{
+//     const {email,password} = req.body
+
+//     if(!email || !password){
+//         return res.status(400).json({
+//             success:false,
+//             message:"All feild is required"
+//         })
+//     }
+    
+//     try{
+
+//         const user = await userdata.findOne({email}).select('+password')
+
+//         if(!user || user.password !== password){
+//             return res.status(400).json({
+//                 success:false,
+//                 message:"invalid email address or password"
+//             })
+//         }
+
+//         const token  = user.jwttoken()
+//         user.password = undefined;
+
+//         const cookieOption = {
+//             maxAge:24 * 60 * 60 * 1000,
+//             httpOnly:true
+//         }
+
+//         res.cookie("token",token,cookieOption)
+//         return res.status(200).json({
+//                 success:true,
+//                 data:user,
+//                 message:"user successfully login"
+//             })
+        
+
+//     }catch(error){
+//         res.status(400).json({
+//             success:false,
+//             message:error.message
+//         })
+//     }
+// }
+
 exports.signin = async(req,res) =>{
     const {email,password} = req.body
 
     if(!email || !password){
-        return res.status(400).json({
+        return res.status(4000).json({
             success:false,
-            message:"All feild is required"
+            message:"all feild are required"
         })
     }
-    
+
     try{
 
-        const user = await userdata.findOne({email}).select('+password')
+       const user = await userdata.findOne({email}).select('+password')
 
-        if(!user || user.password !== password){
-            return res.status(400).json({
-                success:false,
-                message:"invalid email address or password"
-            })
-        }
+       if(!user || user.password !== password){
+        return res.status(400).json({
+            success:false,
+            message:"invalid email or password"
+        })
+       }
 
-        const token  = user.jwttoken()
-        user.password = undefined;
+       const token = user.jwttoken()
+       user.password = undefined
 
-        const cookieOption = {
-            maxAge:24 * 60 * 60 * 1000,
-            httpOnly:true
-        }
+       const cookieOption = {
+        maxAge:24 * 60 * 60 * 1000,
+        httpOnly:true
+       }
 
-        res.cookie("token",token,cookieOption)
-        return res.status(200).json({
-                success:true,
-                data:user
-            })
-        
+       res.cookie("token",token,cookieOption)
+
+       return res.status(200).json({
+        success:true,
+        data:user,
+        message:"user signin successfully again "
+       })
 
     }catch(error){
         res.status(400).json({
