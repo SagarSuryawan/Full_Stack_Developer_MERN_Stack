@@ -154,3 +154,19 @@ exports.signin = async(req,res) =>{
         })
     }
 }
+
+exports.getuser = async(req,res) =>{
+    const userid = req.user.id
+    try {
+        const user = await USER.findById(userid)
+        return res.status(200).json({
+            success:true,
+            data:user
+        })
+    } catch (error) {
+        return res.status(400).json({
+            success:false,
+            message:error.message
+        })
+    }
+}
