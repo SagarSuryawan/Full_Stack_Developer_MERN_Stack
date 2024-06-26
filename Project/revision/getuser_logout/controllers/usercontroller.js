@@ -1,5 +1,6 @@
 const USER = require("../model/userdata")
 const emailValidator = require("email-validator")
+const bcrypt = require("bcryptjs")
 
 exports.signup = async (req,res) => {
 
@@ -71,7 +72,7 @@ try {
 
    
 
-    if(!user || user.password !== password){
+    if(!user || !(await bcrypt.compare(password,user.password))){
         return res.status(400).json({
             success:false,
             message:"invalid email or password"
@@ -100,4 +101,45 @@ try {
         data:"error"
     })
 }
+}
+
+exports.getuser = async (req,res,next) => {
+    const userid = req.user.id
+
+    try {
+        const user = await USER.findById(userid)
+        return res.status(200).json({
+            success:true,
+            user,
+            message:"User Info"
+        })
+    } catch (error) {
+        res.status(400).json({
+            success:false,
+            message:error.message
+        })
+    }
+}
+
+
+exports.logout = async(req,res,next) =>{
+
+    try {
+        const cookieOption = {
+            expires: new Date(),
+            httpOnly:true
+        }
+        res.cookie("token",null,cookieOption)
+        res.status(200).json({
+            success:true,
+            message:"logout"
+        })
+    } catch (error) {
+        res.status(400).json({
+            success:false,
+            message:error.message
+        })
+    }
+
+    
 }
